@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — SOCOM v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<div id="nav-container"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-logo">
+      <img src="images/socomv2_logo.png">
+    </div>
+    <p class="hero-tagline">Data-based estimates of ocean carbon sink variability</p>
+    <p class="hero-sub">An open, international initiative evaluating statistical and machine-learning methods for reconstructing the global surface ocean CO₂ field and quantifying air–sea carbon flux uncertainties.</p>
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">9</span><span class="hstat-l">Methods</span></div>
+      <div class="hstat"><span class="hstat-n">5</span><span class="hstat-l">GOBMs</span></div>
+      <div class="hstat"><span class="hstat-n">18</span><span class="hstat-l">CMIP6 members</span></div>
+      <div class="hstat"><span class="hstat-n">6</span><span class="hstat-l">Experiments</span></div>
+      <div class="hstat"><span class="hstat-n">−0.06</span><span class="hstat-l">µatm global bias</span></div>
+    </div>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-primary">Learn more</a>
+      <a href="publications.html" class="btn btn-outline">Publications</a>
+      <a href="https://doi.org/10.5281/zenodo.19706081" target="_blank" class="btn btn-outline">Dataset ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- wave divider -->
+<div class="wave-divider" style="background:var(--deep);">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#f7fbfd"/>
+  </svg>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section reveal">
+    <span class="section-label">About</span>
+    <h2>What is SOCOM?</h2>
+    <div class="section-divider"></div>
+    <div class="about-grid">
+      <div>
+        <p class="about-lede">Quantification of the sea-air CO₂ flux is possible using measurements of the oceanic and atmospheric partial pressures of CO₂ (<em>p</em>CO₂) in conjunction with a parameterization of the gas transfer across the sea-air interface.</p>
+        <p>Through extensive concerted community efforts, more than 10 million surface ocean <em>p</em>CO₂ measurements were gathered and compiled into the <a href="https://www.socat.info" target="_blank">SOCAT</a> and <a href="https://www.ncei.noaa.gov/access/ocean-carbon-acidification-data-system/oceans/LDEO_Underway_Database/" target="_blank">LDEO</a> databases. However, observations from ships or fixed sensors can only cover a tiny fraction of the spatio-temporal <em>p</em>CO₂ field of the global surface ocean. Interpolation methods are therefore needed to estimate values in all periods and areas not directly observed.</p>
+        <p><strong>SOCOM</strong> collates various methods proposed to <strong>interpolate <em>p</em>CO₂ data in space and time</strong>. These methods span a wide range of approaches. Some reproduce signals in the data more closely; others bridge data-void areas more effectively. SOCOM exploits the <strong>added value of this complementarity</strong> and fosters inter-method investigations.</p>
+        <p>SOCOM is an <strong>open intercomparison initiative</strong>. Launched in 2013 and coordinated with the <a href="https://www.globalcarbonproject.org/" target="_blank">Global Carbon Budget (GCB)</a>, it entered its second phase — <strong>SOCOMv2</strong> — in 2023, introducing a rigorous multi-model, multi-method testbed. Further contributions are welcome.</p>
+        <div class="motiv-grid">
+          <div class="motiv"><h4>Ocean carbon sink</h4><p>The ocean absorbs ~30% of anthropogenic CO₂ per year (~3.2 ± 0.4 Pg C yr⁻¹). A model–data divergence of 0.59 Pg C yr⁻¹ persists in the GCB.</p></div>
+          <div class="motiv"><h4>Sparse sampling</h4><p>SOCAT covers ~2% of the ocean. Wintertime gaps in the Southern Ocean can bias flux trend estimates by 50–130%.</p></div>
+          <div class="motiv"><h4>Ensemble stability</h4><p>Combining nine methods reduces the global mean bias to −0.06 µatm through compensation of opposing errors.</p></div>
+          <div class="motiv"><h4>Open initiative</h4><p>All groups producing surface ocean CO₂ reconstructions are invited to participate and contribute.</p></div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem">SOCOMv2 — six coordinated experiments</p>
+        <ol class="exp-list">
+          <li class="exp-item"><span class="exp-n">EXP 01</span><div class="exp-t"><strong>Geospatial uncertainty</strong>Propagation of regional uncertainties to global flux estimates.</div></li>
+          <li class="exp-item"><span class="exp-n">EXP 02</span><div class="exp-t"><strong>Multiple hindcast testbed</strong>5 GOBMs × 9 methods under SOCATv2023 observational sparsity.</div></li>
+          <li class="exp-item"><span class="exp-n">EXP 03</span><div class="exp-t"><strong>Large ensemble testbed</strong>18-member CMIP6 ESM testbed capturing diverse climate states.</div></li>
+          <li class="exp-item"><span class="exp-n">EXP 04</span><div class="exp-t"><strong>Climatological testbed</strong>Assessment of mean-state sfCO₂ reconstruction skill.</div></li>
+          <li class="exp-item"><span class="exp-n">EXP 05</span><div class="exp-t"><strong>Temperature corrections</strong>Near-surface thermal gradients and flux estimates.</div></li>
+          <li class="exp-item"><span class="exp-n">EXP 06</span><div class="exp-t"><strong>Coastal testbed</strong>Reconstruction methods in coastal and marginal seas.</div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
