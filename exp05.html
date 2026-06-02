@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXP 05 - SOCOM v2</title>
+<link rel="icon" type="image/png" href="images/round_socomv2_logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<div id="nav-container"></div>
+
+<!-- EXP 05 -->
+<section id="exp05">
+  <div class="section reveal">
+    <span class="section-label">Experiment</span>
+    <h2>EXP 05: Temperature corrections</h2>
+    <div class="section-divider"></div>
+    <p style="max-width:700px;margin-bottom:2rem">Near-surface thermal gradients and flux estimates</p>
+    
+    <div class="content-box">
+      <h3>Overview</h3>
+      <p>This experiment investigates the impact of near-surface thermal gradients on ocean carbon flux estimates.</p>
+
+      <h3>Lead Author</h3>
+      <p>Daniel J. Ford</p>
+
+      <h3>Manuscript</h3>
+      <p>To be added</p>
+      
+    </div>
+
+    <div class="content-box">
+      <h3>Experiment Information</h3>
+      <table class="exp-info-table">
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr>
+        <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
+        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 5 investigates the impact of vertical temperature gradients on the ensemble of fCO2 products. Each group provided two interpolation runs, the first uses the SOCAT observations as provided, and the second uses the recalculated SOCAT observations that have been corrected for warm layers and an artificial warm bias. Air-sea CO2 fluxes are calculated in a consistent framework for all products. All products use the same SST and SSS datasets, and a modified version of the SOCAT observations that remove 5% of the observations as an independent test dataset. This is a experiment wide methodological change compared to the GCB2024.</td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2024 <a href="https://socat.info/index.php/version-2024/" target="_blank">https://socat.info/index.php/version-2024/</a></td></tr>
+      </table>
+    </div>
+
+    <div class="row g-4 text-center mt-5">
+      <div class="col-md-6">
+        <div class="card shadow-lg rounded">
+          <div id="CarouselExp05" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active border">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <p>Image 1 - EXP 05</p>
+                </div>
+              </div>
+              <div class="carousel-item border">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <p>Image 2 - EXP 05</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="card-body">
+              <h4 class="card-title m-3">Temperature corrections<br>-<br>Near-surface thermal gradients</h4>
+              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05">Learn more</button>
+              <div class="modal fade" id="ModalExp05" tabindex="-1" aria-labelledby="ModalLabelExp05" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabelExp05">Temperature corrections</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mb-2">
+                      <strong>Methodology</strong>
+                      <br />
+                      <br />
+                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of proper temperature corrections.
+                      <br />
+                      <br />
+                      We quantify the impact of using different temperature measurement depths and correction schemes on flux estimates.
+                      <br />
+                      <br />
+                      <strong>Key findings:</strong> Temperature corrections can significantly impact flux estimates, particularly in regions with strong thermal stratification.
+                      <br />
+                      <br />
+                      <strong>Tools:</strong> Python, R, thermal analysis, flux calculations
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg rounded">
+          <div id="CarouselExp05b" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active border">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <p>Image 3 - EXP 05</p>
+                </div>
+              </div>
+              <div class="carousel-item border">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <p>Image 4 - EXP 05</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="card-body">
+              <h4 class="card-title m-3">Thermal stratification<br>-<br>Flux impact assessment</h4>
+              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05b">Learn more</button>
+              <div class="modal fade" id="ModalExp05b" tabindex="-1" aria-labelledby="ModalLabelExp05b" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabelExp05b">Thermal stratification</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mb-2">
+                      <strong>Methodology</strong>
+                      <br />
+                      <br />
+                      This component assesses the impact of thermal stratification on air-sea CO₂ flux calculations across different ocean regions.
+                      <br />
+                      <br />
+                      We evaluate how temperature measurement depth and correction schemes affect flux estimates in stratified versus well-mixed waters.
+                      <br />
+                      <br />
+                      <strong>Key findings:</strong> Thermal stratification effects are most pronounced in tropical and subtropical regions with strong diurnal warming.
+                      <br />
+                      <br />
+                      <strong>Tools:</strong> Python, R, thermal stratification analysis, flux modeling
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

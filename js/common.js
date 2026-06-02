@@ -1,6 +1,16 @@
 // Navigation menu configuration
 const navLinks = [
   { href: 'index.html', text: 'About' },
+  {
+    text: 'Experiments',
+    dropdown: [
+      { href: 'exp01.html', text: 'EXP 01: Geospatial uncertainty' },
+      { href: 'exp02.html', text: 'EXP 02: Multiple hindcast testbed' },
+      { href: 'exp03.html', text: 'EXP 03: Large ensemble testbed' },
+      { href: 'exp04.html', text: 'EXP 04: Climatological testbed' },
+      { href: 'exp05.html', text: 'EXP 05: Temperature corrections' }
+    ]
+  },
   { href: 'publications.html', text: 'Publications' },
   { href: 'methods.html', text: 'Methods' },
   { href: 'resources.html', text: 'Resources' },
@@ -10,7 +20,7 @@ const navLinks = [
 ];
 
 // Logo configuration
-const logoPath = 'images/socomv2_logo.png';
+const logoPath = 'images/round_socomv2_2_logo.png';
 
 // Footer configuration
 const footerCopyright = '© 2026 SOCOM — Surface Ocean pCO₂ Mapping Intercomparison';
@@ -38,10 +48,30 @@ function generateNavigation() {
   `;
   
   navLinks.forEach(link => {
-    const isActive = link.href === currentPage ? 'active' : '';
-    navHTML += `
-      <li class="nav-item"><a class="nav-link ${isActive}" href="${link.href}">${link.text}</a></li>
-    `;
+    if (link.dropdown) {
+      // Check if any dropdown item is active
+      const dropdownActive = link.dropdown.some(item => item.href === currentPage) ? 'active' : '';
+      navHTML += `
+        <li class="nav-item dropdown ${dropdownActive}">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">${link.text}</a>
+          <ul class="dropdown-menu">
+      `;
+      link.dropdown.forEach(item => {
+        const itemActive = item.href === currentPage ? 'active' : '';
+        navHTML += `
+          <li><a class="dropdown-item ${itemActive}" href="${item.href}">${item.text}</a></li>
+        `;
+      });
+      navHTML += `
+          </ul>
+        </li>
+      `;
+    } else {
+      const isActive = link.href === currentPage ? 'active' : '';
+      navHTML += `
+        <li class="nav-item"><a class="nav-link ${isActive}" href="${link.href}">${link.text}</a></li>
+      `;
+    }
   });
   
   navHTML += `
@@ -62,18 +92,25 @@ function generateFooter() {
       <span class="ft-copy">${footerAttribution}</span>
       <ul class="ft-links">
   `;
-  
+
   navLinks.forEach(link => {
-    footerHTML += `
-      <li><a style="font-size: 0.7rem; opacity: 0.6;" href="${link.href}">${link.text}</a></li>
-    `;
+    if (link.dropdown) {
+      // For dropdown items in footer, link to the first item (exp01.html)
+      footerHTML += `
+        <li><a style="font-size: 0.7rem; opacity: 0.6;" href="${link.dropdown[0].href}">${link.text}</a></li>
+      `;
+    } else {
+      footerHTML += `
+        <li><a style="font-size: 0.7rem; opacity: 0.6;" href="${link.href}">${link.text}</a></li>
+      `;
+    }
   });
-  
+
   footerHTML += `
       </ul>
     </footer>
   `;
-  
+
   return footerHTML;
 }
 
