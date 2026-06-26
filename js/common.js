@@ -114,6 +114,20 @@ function generateFooter() {
   return footerHTML;
 }
 
+// Decode and display emails (anti-spam)
+function decodeEmails() {
+  const emailElements = document.querySelectorAll('[data-email]');
+  emailElements.forEach(el => {
+    const email = el.getAttribute('data-email');
+    const domain = el.getAttribute('data-domain');
+    if (email && domain) {
+      const fullEmail = email + '@' + domain;
+      el.textContent = fullEmail;
+      el.href = 'mailto:' + fullEmail;
+    }
+  });
+}
+
 // Initialize navigation and footer
 document.addEventListener('DOMContentLoaded', function() {
   // Insert navigation
@@ -121,13 +135,16 @@ document.addEventListener('DOMContentLoaded', function() {
   if (navContainer) {
     navContainer.innerHTML = generateNavigation();
   }
-  
+
   // Insert footer
   const footerContainer = document.getElementById('footer-container');
   if (footerContainer) {
     footerContainer.innerHTML = generateFooter();
   }
-  
+
+  // Decode emails
+  decodeEmails();
+
   // Scroll reveal animations
   const obs = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) e.target.classList.add('vis');
