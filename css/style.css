@@ -609,11 +609,32 @@ sub, sup { font-size: 0.72em; }
 
 .orgs-grid .flip-card-front,
 .orgs-grid .flip-card-back {
-  padding: 1rem;
+  padding: 0;
 }
 
 .orgs-grid .flip-card {
-  height: 240px;
+  height: 120px;
+}
+
+#organizations .section > .flip-card {
+  height: 120px;
+  max-width: 400px;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  #organizations .section > .flip-card {
+    height: 160px;
+  }
+  
+  #organizations .section > .flip-card .org-logo img {
+    max-height: 45px;
+  }
+}
+
+#organizations .flip-card-front,
+#organizations .flip-card-back {
+  padding: 1rem;
 }
 
 .contact-grid .flip-card {
@@ -672,19 +693,19 @@ sub, sup { font-size: 0.72em; }
 .flip-card-back .org-name {
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
   color: var(--white);
 }
 
 .flip-card-back .org-loc {
   font-size: 0.8rem;
   color: var(--foam);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
 .flip-card-back .org-flag {
   font-size: 1.5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .flip-card-back .org-link {
