@@ -8,12 +8,16 @@ This is the first version of the website for the Surface Ocean pCO₂ Mapping In
 socomv2/
 ├── index.html          # Homepage (About section)
 ├── contact.html        # Contact page
-├── email.php           # Email form handler
 ├── publications.html   # Publications page
 ├── methods.html        # Methods page
 ├── resources.html      # Resources page
-├── organizations.html # Organizations page
+├── organizations.html  # Organizations page
 ├── events.html         # Events page
+├── exp01.html          # Experiment 01: Geospatial uncertainty
+├── exp02.html          # Experiment 02: Multiple hindcast testbed
+├── exp03.html          # Experiment 03: Large ensemble testbed
+├── exp04.html          # Experiment 04: Climatological testbed
+├── exp05.html          # Experiment 05: Temperature corrections
 ├── css/
 │   ├── bootstrap.min.css  # Bootstrap 5.3 CSS framework
 │   └── style.css          # Custom CSS styles
@@ -26,10 +30,10 @@ socomv2/
 ## Technologies Used
 
 - **HTML5**: Semantic markup
-- **PHP**: Server-side scripting for email handling
 - **Bootstrap 5.3**: CSS framework for responsive design and components
 - **Custom CSS**: Additional styling to maintain SOCOM branding
 - **Google Fonts**: Libre Baskerville (serif) and DM Sans (sans-serif)
+- **JavaScript**: Dynamic navigation/footer generation and scroll animations
 
 ## How to Edit Content
 
@@ -45,6 +49,8 @@ The footer is also configured in `js/common.js`. To update the copyright or attr
 
 Each page has a main section with a specific ID (e.g., `#hero`, `#about`, `#contact`, `#publications`, `#methods`, `#resources`, `#organizations`, `#events`). Edit the content within these sections in the respective HTML files to update page text, links, and data.
 
+Experiment pages (exp01.html through exp05.html) contain detailed information about each coordinated experiment, including objectives, methodology, and results.
+
 ## How to Edit Styles
 
 ### Custom CSS (css/style.css)
@@ -58,22 +64,29 @@ The site uses Bootstrap 5.3 for responsive navbar with mobile menu toggle, grid 
 ### Color Scheme
 
 Main colors (defined as CSS variables):
+- `--ink`: Dark blue (#0d1b2e)
 - `--deep`: Dark blue (#07253f)
 - `--mid`: Medium blue (#0e4d7b)
-- `--teal`: Teal/cyan (#2fb8c8)
-- `--cyan`: Light cyan (#17a2b8)
+- `--teal`: Teal (#1a7fa0)
+- `--cyan`: Light cyan (#2fb8c8)
+- `--foam`: Light cyan (#7dd8e4)
+- `--pale`: Very light teal (#e8f6f9)
+- `--white`: Off-white (#f7fbfd)
+- `--sand`: Light beige (#f0ede6)
 - `--accent`: Orange (#e05c28)
-- `--foam`: White/light (#f7fbfd)
-- `--sand`: Light gray (#f7fbfd)
-- `--pale`: Very light teal (#e8f4f6)
-- `--muted`: Gray text (#6b7d8c)
+- `--muted`: Gray text (#6b8fa8)
 
 ## Images
 
 All images are stored in the `images/` folder. When adding new images:
 1. Place the image file in the `images/` folder
 2. Reference it in HTML with: `<img src="images/filename.png">`
-3. For the navbar logo, the current file is `socomv2_logo.png`
+3. For the navbar logo, the current file is `round_socomv2_2_logo.png`
+
+The images folder includes:
+- Organization logos (VLIZ, Exeter, LDEO, ETH, LMD, LSCE, JMA, MPI, MRI, NIES, ESA, OC4C)
+- SOCOMv2 branding logos (main logo and round version)
+- Event images and other assets
 
 ## Responsive Design
 
@@ -101,7 +114,5 @@ To add a new page:
 4. Update the `navLinks` array in `js/common.js` to include the new page
 5. Add custom styles to `css/style.css` if needed
 
----
-
-**Last updated**: May 2026
+**Last updated**: July 2026
 **Maintained by**: SOCOMv2 team
