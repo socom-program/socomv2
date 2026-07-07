@@ -771,6 +771,15 @@ sub, sup { font-size: 0.72em; }
   font-size: 0.9rem;
 }
 
+.carousel-item img {
+  height: 300px;
+  object-fit: contain;
+}
+
+.carousel-item img.exp-img-large {
+  height: 600px;
+}
+
 .exp-info-table {
   width: 100%;
   border-collapse: collapse;
