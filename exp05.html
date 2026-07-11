@@ -22,27 +22,31 @@
     <span class="section-label">Experiment</span>
     <h2>EXP 05: Temperature corrections</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">Near-surface thermal gradients and flux estimates</p>
-    
+    <p style="max-width:700px;margin-bottom:2rem">Experiment 5 investigates the impact of these natural and artificial temperature gradients on the ocean sink estimate from the sfCO2 ensemble.</p></p>
+
     <div class="content-box">
       <h3>Overview</h3>
-      <p>This experiment investigates the impact of near-surface thermal gradients on ocean carbon flux estimates.</p>
+      <p>Previous studies have identified that the ocean carbon sink estimated from bulk air and seawater CO<sub>2</sub> may be underestimated due to overlooking naturally occurring vertical temperature gradients that are known to exist in the water close to the ocean’s surface.
+      These natural gradients include (1) the cool skin effect; where the very surface (≈10 μm) is cooler than the underlying water and (2) diurnal warm layers; under conditions of high insolation and low wind speed, the top few metres of the ocean are heated relative to the waters further below.
+      Ford et al. (<a href=https://doi.org/10.1038/s41597-026-07532-5>2026</a>) showed a thrid artificial gradient is also proesent due to a warm bias in the underlying SOCAT observations.
+      <br />
+      Experiment 5 investigates the impact of these natural and artificial temperature gradients on the ocean sink estimate from the sfCO2 ensemble.</p>
 
       <h3>Lead Author</h3>
       <p>Daniel J. Ford</p>
 
       <h3>Manuscript</h3>
-      <p>To be added</p>
-      
+      <p>Daniel J. Ford, Amanda Fay, Thea Heimdal Hatlen et al. Impact of near-surface temperature gradients on the ensemble of sfCO2 products within the SOCOMv2 initiative (in preparation)</p>
+
     </div>
 
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr>
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">In preparation</td></tr>
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
         <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 5 investigates the impact of vertical temperature gradients on the ensemble of fCO2 products. Each group provided two interpolation runs, the first uses the SOCAT observations as provided, and the second uses the recalculated SOCAT observations that have been corrected for warm layers and an artificial warm bias. Air-sea CO2 fluxes are calculated in a consistent framework for all products. All products use the same SST and SSS datasets, and a modified version of the SOCAT observations that remove 5% of the observations as an independent test dataset. This is a experiment wide methodological change compared to the GCB2024.</td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2024 <a href="https://socat.info/index.php/version-2024/" target="_blank">https://socat.info/index.php/version-2024/</a></td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">Recalculated SOCATv2024 - <a href="https://zenodo.org/records/15706025" target="_blank">https://zenodo.org/records/15706025</a></td></tr>
       </table>
     </div>
 
@@ -53,12 +57,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active border">
                 <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <p>Image 1 - EXP 05</p>
-                </div>
-              </div>
-              <div class="carousel-item border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <p>Image 2 - EXP 05</p>
+                  <img src="images/Experiment5/Ex5_Fig1.png" class="d-block w-100" alt="EXP 05 Figure 1">
                 </div>
               </div>
             </div>
@@ -71,7 +70,7 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Temperature corrections<br>-<br>Near-surface thermal gradients</h4>
+              <h4 class="card-title m-3">Impact of applying vertical temperature gradient corrections on the ensemble ocean sink, and comparing to indepedent ocean sink estimates</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05">Learn more</button>
               <div class="modal fade" id="ModalExp05" tabindex="-1" aria-labelledby="ModalLabelExp05" aria-hidden="true">
                 <div class="modal-dialog">
@@ -84,16 +83,16 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of proper temperature corrections.
+                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of including temperature corrections.
                       <br />
                       <br />
                       We quantify the impact of using different temperature measurement depths and correction schemes on flux estimates.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Temperature corrections can significantly impact flux estimates, particularly in regions with strong thermal stratification.
+                      <strong>Key findings:</strong> The inclusion of vertical temperature gradients can significantly increase the ocean CO<sub>2</sub> by up to 1 Pg C yr<sup>-1</sup>.
                       <br />
                       <br />
-                      <strong>Tools:</strong> Python, R, thermal analysis, flux calculations
+                      <strong>Tools:</strong> Python, FluxEngine
                     </div>
                   </div>
                 </div>
@@ -108,12 +107,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active border">
                 <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <p>Image 3 - EXP 05</p>
-                </div>
-              </div>
-              <div class="carousel-item border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <p>Image 4 - EXP 05</p>
+                  <img src="images/Experiment5/Ex5_Fig2.png" class="d-block w-100" alt="EXP 05 Figure 2">
                 </div>
               </div>
             </div>
@@ -126,7 +120,7 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Thermal stratification<br>-<br>Flux impact assessment</h4>
+              <h4 class="card-title m-3">Sensitivity of individual sfCO2 products differs</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05b">Learn more</button>
               <div class="modal fade" id="ModalExp05b" tabindex="-1" aria-labelledby="ModalLabelExp05b" aria-hidden="true">
                 <div class="modal-dialog">
@@ -139,16 +133,16 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This component assesses the impact of thermal stratification on air-sea CO₂ flux calculations across different ocean regions.
+                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of including temperature corrections.
                       <br />
                       <br />
-                      We evaluate how temperature measurement depth and correction schemes affect flux estimates in stratified versus well-mixed waters.
+                      We quantify the impact of using different temperature measurement depths and correction schemes on flux estimates.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Thermal stratification effects are most pronounced in tropical and subtropical regions with strong diurnal warming.
+                      <strong>Key findings:</strong> The inclusion of vertical temperature gradients can significantly increase the ocean CO<sub>2</sub> by up to 1 Pg C yr<sup>-1</sup>.
                       <br />
                       <br />
-                      <strong>Tools:</strong> Python, R, thermal stratification analysis, flux modeling
+                      <strong>Tools:</strong> Python, FluxEngine
                     </div>
                   </div>
                 </div>
