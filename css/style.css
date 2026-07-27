@@ -780,6 +780,10 @@ sub, sup { font-size: 0.72em; }
   height: 600px;
 }
 
+.carousel-item img.exp-img-large3 {
+  height: 500px;
+}
+
 .exp-info-table {
   width: 100%;
   border-collapse: collapse;
