@@ -11,8 +11,8 @@
   --sand:   #f0ede6;
   --accent: #e05c28;
   --muted:  #6b8fa8;
-  --serif:  'Libre Baskerville', Georgia, serif;
-  --sans:   'DM Sans', system-ui, sans-serif;
+  --serif:  'Manrope', system-ui, sans-serif;
+  --sans:   'Manrope', system-ui, sans-serif;
   --nav-h:  64px;
 }
 
@@ -171,7 +171,8 @@ sub, sup { font-size: 0.72em; }
 }
 .hero-sub {
   font-size: 0.95rem; color: rgba(125,216,228,0.72);
-  max-width: 560px; margin: 0 auto 2rem;
+  margin: 0 auto 2rem;
+  text-align: justify;
   animation: fadeUp 0.9s 0.3s ease both;
 }
 
@@ -242,12 +243,14 @@ sub, sup { font-size: 0.72em; }
 
 /* ─── ABOUT ─────────────────────────────────────── */
 #about { background: var(--white); }
+#about p { text-align: justify; }
 .about-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 3.5rem 5rem; align-items: start; }
 @media(max-width: 760px) { .about-grid { grid-template-columns: 1fr; } }
 .about-lede {
   font-family: var(--serif); font-size: 1.1rem; color: var(--deep);
   line-height: 1.65; margin-bottom: 1.25rem;
   border-left: 2px solid var(--cyan); padding-left: 1.2rem;
+  text-align: justify;
 }
 .exp-list { list-style: none; }
 .exp-item {
@@ -458,6 +461,39 @@ sub, sup { font-size: 0.72em; }
   padding: .85rem 0;
   border-bottom: 1px solid #dce8ee;
 }
+.ev-main {
+  min-width: 0;
+}
+
+.ev-main .event-description {
+  margin: .55rem 0 0;
+}
+
+
+.ev-content {
+  min-width: 0;
+}
+
+.event-description {
+  text-align: justify;
+  font-size: .85rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: .55rem 0 0;
+}
+
+
+.ev-content {
+  min-width: 0;
+}
+
+.event-description {
+  text-align: justify;
+  font-size: .85rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: .75rem 0 0;
+}
 /* .ev-row-with-image:first-child {
   border-top: 1px solid #dce8ee;
 } */
@@ -513,26 +549,59 @@ sub, sup { font-size: 0.72em; }
 .link-card a { font-size: .88rem; color: #2a3d50; font-weight: 400; }
 .link-card a:hover { color: var(--teal); }
 
+.event-description {
+  text-align: justify;
+}
 /* ─── CONTACT ───────────────────────────────────── */
-#contact { background: var(--white); }
+#contact { background: var(--white); position: relative; }
 .contact-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
   gap: 1.5rem; margin-bottom: 2rem;
 }
 .cc {
-  border: 1px solid #dce8ee; border-radius: 6px;
-  padding: 1.25rem 1.4rem; background: var(--pale);
+  border: 1px solid #dce8ee;
+  border-radius: 6px;
+  padding: 1.25rem 1.4rem;
+  background: var(--pale);
   transition: border-color .15s;
 }
 .cc:hover { border-color: var(--teal); }
-.cc-name { font-weight: 600; font-size: .95rem; color: var(--deep); margin-bottom: .15rem; }
+.cc-name { font-weight: 600; font-size: 0.95rem; color: var(--deep); margin-bottom: 0.15rem; }
 .cc-role {
-  font-size: .68rem; font-weight: 500; letter-spacing: .08em;
-  text-transform: uppercase; color: var(--teal); margin-bottom: .1rem;
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 0.1rem;
 }
-.cc-affil { font-size: .75rem; color: var(--muted); margin-bottom: .7rem; }
-.cc-exp { font-size: .73rem; color: var(--accent); margin-bottom: .7rem; font-weight: 500; }
-.cc-email { font-size: .8rem; color: var(--teal); }
+.cc-affil { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.7rem; }
+.cc-exp {
+  font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--cyan); margin-bottom: 0.5rem;
+}
+.cc-email {
+  font-size: 0.85rem; color: var(--teal);
+  text-decoration: none; padding: 0.5rem 1rem;
+  background: rgba(255,255,255,0.5); border-radius: 4px;
+  transition: background 0.2s;
+}
+.cc-email:hover { background: rgba(255,255,255,0.8); }
+
+.contact-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 1.4rem;
+  grid-column: span 2;
+}
+.contact-logo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+@media (max-width: 768px) {
+  .contact-logo {
+    grid-column: span 1;
+  }
+}
 
 /* ─── FLIP CARDS ───────────────────────────────────── */
 .flip-card {
@@ -673,6 +742,13 @@ sub, sup { font-size: 0.72em; }
   font-size: 0.75rem;
   color: var(--cyan);
   margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.content-box .cc-email {
+  font-size: 0.95rem;
+  color: var(--teal);
+  text-decoration: none;
   font-weight: 500;
 }
 
