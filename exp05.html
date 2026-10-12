@@ -22,31 +22,45 @@
     <span class="section-label">Experiment</span>
     <h2>EXP 05: Temperature corrections</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">Experiment 5 investigates the impact of these natural and artificial temperature gradients on the ocean sink estimate from the sfCO₂ ensemble.</p>
+    <p style="max-width:700px;margin-bottom:2rem">Quantifies how near-surface temperature gradients affect FCO₂ and the ocean carbon sink.</p>
 
     <div class="content-box">
       <h3>Overview</h3>
-      <p>Previous studies have identified that the ocean carbon sink estimated from bulk air and seawater CO<sub>2</sub> may be underestimated due to overlooking naturally occurring vertical temperature gradients that are known to exist in the water close to the ocean’s surface.
-      These natural gradients include (1) the cool skin effect; where the very surface (≈10 μm) is cooler than the underlying water and (2) diurnal warm layers; under conditions of high insolation and low wind speed, the top few metres of the ocean are heated relative to the waters further below.
-      Ford et al. (<a href=https://doi.org/10.1038/s41597-026-07532-5>2026</a>) showed a third artificial gradient is also present due to a warm bias in the underlying SOCAT observations.
+      <p>Previous studies have identified that the ocean carbon sink estimated from bulk air and seawater CO₂ may be underestimated due to overlooking naturally occurring vertical temperature gradients that are known to exist in the water close to the ocean’s surface.
+      These natural gradients include (1) the cool skin effect, where the very surface (≈10 μm) is cooler than the underlying water, and (2) diurnal warm layers, where under conditions of high insolation and low wind speed the top few metres of the ocean are heated relative to the waters further below.
+      Ford et al. (<a href="https://doi.org/10.1038/s41597-026-07532-5" target="_blank" rel="noopener noreferrer">2026</a>) showed that a third, artificial gradient is also present due to a warm bias in the sfCO₂ observations in SOCAT.
       <br />
-      Experiment 5 investigates the impact of these natural and artificial temperature gradients on the ocean sink estimate from the sfCO₂ ensemble.</p>
+      Experiment 5 investigates the impact of these natural and artificial temperature gradients on FCO₂ and the ocean carbon sink estimated from the sfCO₂ reconstructions.</p>
 
       <h3>Lead Author</h3>
       <a class="cc-email" data-email="d.ford" data-domain="exeter.ac.uk"></a>
 
       <h3>Manuscript</h3>
-      <p>Daniel J. Ford, Amanda Fay, Thea Heimdal Hatlen et al. Impact of near-surface temperature gradients on the ensemble of sfCO₂ products within the SOCOMv2 initiative (in preparation)</p>
+      <p>Daniel J. Ford, Amanda Fay, Thea Heimdal Hatlen et al. Impact of near-surface temperature gradients on the ensemble of sfCO₂ products within the SOCOMv2 initiative (in preparation).</p>
 
     </div>
 
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">In preparation</td></tr>
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
-        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 5 investigates the impact of vertical temperature gradients on the ensemble of fCO₂ products. Each group provided two interpolation runs, the first uses the SOCAT observations as provided, and the second uses the recalculated SOCAT observations that have been corrected for warm layers and an artificial warm bias. Air-sea CO₂ fluxes are calculated in a consistent framework for all products. All products use the same SST and SSS datasets, and a modified version of the SOCAT observations that remove 5% of the observations as an independent test dataset. This is a experiment wide methodological change compared to the GCB2024.</td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">Recalculated SOCATv2024 - <a href="https://zenodo.org/records/15706025" target="_blank">https://zenodo.org/records/15706025</a></td></tr>
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">None (sfCO₂ observations)</td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
+          8 sfCO₂ reconstruction methods:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>sfCO₂-Residual (Bennington et al., 2022)</li>
+            <li>NIES-ML3 (Zeng et al., 2022)</li>
+            <li>VLIZ-SOMFFN (Landschützer et al., 2016)</li>
+            <li>UExP-FNN-U (Ford et al., 2024)</li>
+            <li>JMA-MLR (Iida et al., 2021)</li>
+            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
+            <li>LDEO-HPD (Gloege et al., 2022; Bennington et al., 2022)</li>
+            <li>CMEMS-LSCE-FFNN (Chau et al., 2022)</li>
+          </ul>
+        </td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://zenodo.org/records/15706025" target="_blank" rel="noopener noreferrer">Recalculated SOCATv2024</a></td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">EXP 05 investigates the impact of vertical temperature gradients on the sfCO₂ reconstructions. Each group provided two runs of its sfCO₂ reconstruction method: the first uses the sfCO₂ observations from SOCAT as provided, and the second uses the recalculated sfCO₂ observations, corrected for warm layers and an artificial warm bias. FCO₂ is calculated in a consistent framework for all sfCO₂ reconstruction methods. All sfCO₂ reconstruction methods use the same SST and SSS datasets, and a modified version of the sfCO₂ observations from which 5% of the observations are removed as an independent test dataset. This is an experiment-wide methodological change compared with GCB 2024.</td></tr>
       </table>
     </div>
 
@@ -70,7 +84,7 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Impact of applying vertical temperature gradient corrections on the ensemble ocean sink, and comparing to independent ocean sink estimates</h4>
+              <h4 class="card-title m-3">Impact of vertical temperature gradient corrections on the ocean carbon sink across all sfCO₂ reconstructions, compared with independent estimates of the ocean carbon sink</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05">Learn more</button>
               <div class="modal fade" id="ModalExp05" tabindex="-1" aria-labelledby="ModalLabelExp05" aria-hidden="true">
                 <div class="modal-dialog">
@@ -83,13 +97,13 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of including temperature corrections.
+                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including temperature corrections.
                       <br />
                       <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on flux estimates.
+                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> The inclusion of vertical temperature gradients can significantly increase the ocean CO<sub>2</sub> by up to 1 Pg C yr<sup>-1</sup>.
+                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, FluxEngine
@@ -120,7 +134,7 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Sensitivity of individual sfCO₂ products differs</h4>
+              <h4 class="card-title m-3">Sensitivity differs between sfCO₂ reconstruction methods</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05b">Learn more</button>
               <div class="modal fade" id="ModalExp05b" tabindex="-1" aria-labelledby="ModalLabelExp05b" aria-hidden="true">
                 <div class="modal-dialog">
@@ -133,13 +147,13 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment examines how near-surface thermal gradients affect air-sea CO₂ flux calculations and the importance of including temperature corrections.
+                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including temperature corrections.
                       <br />
                       <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on flux estimates.
+                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> The inclusion of vertical temperature gradients can significantly increase the ocean CO<sub>2</sub> by up to 1 Pg C yr<sup>-1</sup>.
+                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, FluxEngine
