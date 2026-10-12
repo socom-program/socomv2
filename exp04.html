@@ -20,30 +20,50 @@
 <section id="exp04">
   <div class="section reveal">
     <span class="section-label">Experiment</span>
-    <h2>EXP 04: Climatological testbed</h2>
+    <h2>EXP 04: Climatological Testbed</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">A climatological testbed assessing mean-state sfCO₂ reconstruction skill</p>
+    <p style="max-width:700px;margin-bottom:2rem">Tests whether the early-2000s ocean carbon sink hiatus can be explained by sampling alone.</p>
     
     <div class="content-box">
       <h3>Overview</h3>
-      <p>This experiment evaluates the skill of sfCO₂ reconstructions under conditions of sparse observational coverage. An ensemble of machine learning methods reconstruct a synthetic climatological sfCO₂ field using climatological inputs for feature variables using SOCATv2023 observational coverage.</p>
+      <p>Many flux data products show a hiatus in the ocean carbon sink in the early 2000s. This experiment tests whether that signal could be an artefact of sparse sfCO₂ observations. It uses a synthetic sfCO₂ field without interannual variability, so any interannual variability in the sfCO₂ reconstructions can only come from the sampling.</p>
       
       <h3>Lead Author</h3>
       <a class="cc-email" data-email="afay" data-domain="ldeo.columbia.edu"></a>
 
       <h3>Manuscript</h3>
-      <p>In Preparation</p>
+      <p>In preparation</p>
     </div>
 
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr>
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
-        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 4 attempts to evaluate the skill of sfCO₂ reconstruction methods under a simple testbed condition, and assess the impact of sparse observational coverage. Specifically, the motivation is to answer the question: Is the ocean carbon sink hiatus that many products show in the early 2000s, attributable to sampling alone or is it a true shift in carbon uptake?
-            
-            In this experiment, the true sfCO₂ field has no interannual variability and no internal physical or biogeochemical dynamics. Therefore, the reconstruction aims to identify this prescribed seasonal cycle and long term mean sfCO₂ value only, given available sampling density. There are two sub-experiments conducted: a ‘no-trend’ experiment where the climatology is repeated each year and remains identical each year. Additionally, to more accurately replicate a real-world situation, a ‘with-trend’ reconstruction was also performed, which assigns a 2 µatm/yr trend onto the Takahashi climatology sfCO₂ field as well as the atmospheric xCO₂ field. All other variables do not contain an assigned trend.</td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2023 <a href="https://socat.info/index.php/version-2023/" target="_blank">https://socat.info/index.php/version-2023/</a></td></tr>
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">
+          Synthetic sfCO₂ field based on the Takahashi climatology (Takahashi et al., 2009):
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>No-trend: identical climatology every year</li>
+            <li>With-trend: trend of 2 µatm yr⁻¹ added to sfCO₂ and atmospheric xCO₂</li>
+          </ul>
+        </td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
+          8 sfCO₂ reconstruction methods:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
+            <li>CMEMS-LSCE-v1 (Chau et al., 2022)</li>
+            <li>JMA-MLR (Iida et al., 2021)</li>
+            <li>LDEO pCO2-Residual (Bennington et al., 2022)</li>
+            <li>NIES-ML3 (Zeng et al., 2022)</li>
+            <li>OceanSODA-ETHZv2 (Gregor et al., 2024)</li>
+            <li>UExP-FNN-U (Ford et al., 2024)</li>
+            <li>VLIZ-SOMFFN (Landschützer et al., 2016)</li>
+          </ul>
+        </td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://socat.info/index.php/version-2023/" target="_blank" rel="noopener noreferrer">SOCATv2023</a></td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">Experiment 4 evaluates the skill of sfCO₂ reconstruction methods in a simple testbed and assesses the impact of sparse sfCO₂ observations. Specifically, the motivation is to answer the question: is the early-2000s hiatus in the ocean carbon sink, shown by many flux data products, attributable to sampling alone, or is it a true shift in carbon uptake?
+            <br><br>
+            In this experiment, the true sfCO₂ field has no interannual variability and no internal physical or biogeochemical dynamics. The sfCO₂ reconstructions therefore only aim to identify the prescribed seasonal cycle and long-term mean sfCO₂, given the available sampling density. Two sub-experiments are conducted: a ‘no-trend’ experiment, in which the climatology is identical each year, and, to more closely replicate real-world conditions, a ‘with-trend’ experiment, which adds a trend of 2 µatm yr⁻¹ to both the Takahashi sfCO₂ climatology and the atmospheric xCO₂ field. All other predictor variables contain no trend.</td></tr>
       </table>
     </div>
 
@@ -79,13 +99,13 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment evaluates how well sfCO₂ reconstructions capture the climatological mean state of sea surface CO₂ across different ocean basins.
+                      This experiment evaluates how well the sfCO₂ reconstruction methods capture the climatological mean state of sfCO₂ across different ocean basins.
                       <br />
                       <br />
-                      We compare reconstructed climatologies against observational benchmarks and assess spatial patterns of bias and skill.
+                      We compare the sfCO₂ reconstructions against the known climatological truth and assess spatial patterns of bias and skill.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Mean-state reconstruction skill varies regionally, with systematic biases in certain ocean basins.
+                      <strong>Key findings:</strong> The skill of the sfCO₂ reconstruction methods in reproducing the mean state varies regionally, with systematic biases in certain ocean basins.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, R, climatological analysis, spatial statistics
@@ -130,13 +150,13 @@
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This component performs basin-scale assessment of spatial biases in climatological reconstructions.
+                      This component performs a basin-scale assessment of spatial biases in the sfCO₂ reconstructions.
                       <br />
                       <br />
-                      We identify regions where sfCO₂ reconstructions systematically over- or under-estimate mean-state CO₂ concentrations and investigate underlying causes.
+                      We identify regions where the sfCO₂ reconstructions systematically over- or underestimate the mean-state sfCO₂ and investigate the underlying causes.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Basin-specific bias patterns suggest regional observation gaps and model structural limitations.
+                      <strong>Key findings:</strong> Basin-specific bias patterns point to regional gaps in the sfCO₂ observations and structural limitations of the sfCO₂ reconstruction methods.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, R, spatial bias analysis, basin statistics
