@@ -20,9 +20,9 @@
 <section id="exp01">
   <div class="section reveal">
     <span class="section-label">Experiment</span>
-    <h2>EXP 01: Geospatial uncertainty analysis</h2>
+    <h2>EXP 01: Uncertainty propagation</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem"> Experiment 1 quantifies the uncertainty in the ocean carbon sink from sfCO₂ reconstructions and gas transfer.</p>
+    <p style="max-width:700px;margin-bottom:2rem">Quantifies the uncertainty in the ocean carbon sink from sfCO₂ reconstructions and gas transfer.</p>
 
     <div class="content-box">
       <h3>Overview</h3>
@@ -36,10 +36,12 @@
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-<!--        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr> -->
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">Updated annually within the GCB cycle</td></tr>
-        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 1 investigates how regional uncertainties in ocean carbon flux estimates propagate to global scale estimates through spatial aggregation and uncertainty quantification.</td></tr>
+<!--        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr> -->
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">None (sfCO₂ observations)</td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">All sfCO₂ reconstruction methods in the GCB</td></tr>
         <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">Updated annually for each GCB update</td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">For each sfCO₂ reconstruction method, the uncertainties in the sfCO₂ reconstruction and the gas transfer coefficient are estimated and propagated into FCO₂ and the ocean carbon sink, from regional to global scale.</td></tr>
       </table>
     </div>
 
@@ -63,31 +65,30 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Key resulting figures showing the individual sfCO₂ products (left) and ensemble (right) for the fCO<sub>2 (sw)</sub> mapping (top) and gas transfer coefficient (bottom)</h4>
+              <h4 class="card-title m-3">Uncertainty in each sfCO₂ reconstruction (left) and across all sfCO₂ reconstructions (right), due to the sfCO₂ reconstruction (top) and the gas transfer coefficient (bottom)</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp01">Learn more</button>
               <div class="modal fade" id="ModalExp01" tabindex="-1" aria-labelledby="ModalLabelExp01" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp01">Geospatial uncertainty</h5>
+                      <h5 class="modal-title" id="ModalLabelExp01">Uncertainty per sfCO₂ reconstruction</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment applies the uncertainty evaluation approach described in Ford et al. (2024; <a href=https://doi.org/10.1029/2024GB008188>link</a>) to estimate the uncertainty in the ocean CO<sub>2</sub> sink from the two dominant uncertainty components;
-                      (1) the fCO<sub>2 (sw)</sub> evaluation (or called the fCO<sub>2</sub> mapping) and (2) the gas transfer coefficient. We estimate time varying uncertainties due to these two components, instead of relying on fixed values.
+                      This experiment applies the uncertainty evaluation approach of Ford et al. (2024; <a href="https://doi.org/10.1029/2024GB008188" target="_blank" rel="noopener noreferrer">link</a>) to estimate the uncertainty in the ocean carbon sink from its two dominant components: (1) the sfCO₂ reconstruction and (2) the gas transfer coefficient. Both uncertainties are estimated as time-varying rather than fixed values.
                       <br />
                       <br />
-                      This approach is applied to each sfCO₂ product submitted to the GCB, and the results are updated yearly.
+                      The approach is applied to each sfCO₂ reconstruction method submitted to the GCB, and the results are updated annually.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Uncertainties due to the fCO<sub>2</sub> mapping vary on the methodology used. Uncertainties are time varying for both fCO<sub>2</sub> mapping and gas transfer
+                      <strong>Key findings:</strong> The uncertainty due to the sfCO₂ reconstruction depends on the sfCO₂ reconstruction method used. The uncertainties due to both the sfCO₂ reconstruction and the gas transfer coefficient vary over time.
                       <br />
                       <br />
-                      <strong>Tools:</strong> The analysis is conducted in Python, and the analysis code can be found here: <a href =https://github.com/JamieLab/SOCOMv2/tree/main/Experiment_1>Link</a>.
-                      The analysis is reliant on the code base within the OceanICU framework: <a href=https://github.com/JamieLab/OceanICU/tree/main>Link</a>
+                      <strong>Tools:</strong> The analysis is conducted in Python; the code is available <a href="https://github.com/JamieLab/SOCOMv2/tree/main/Experiment_1" target="_blank" rel="noopener noreferrer">here</a>.
+                      It builds on the <a href="https://github.com/JamieLab/OceanICU/tree/main" target="_blank" rel="noopener noreferrer">OceanICU framework</a>.
                     </div>
                   </div>
                 </div>
@@ -115,31 +116,30 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Estimating the ensmeble uncertainty due to the dominant components for GCB2025</h4>
+              <h4 class="card-title m-3">Uncertainty in the ocean carbon sink across all sfCO₂ reconstructions due to the dominant components, GCB 2025</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp01b">Learn more</button>
               <div class="modal fade" id="ModalExp01b" tabindex="-1" aria-labelledby="ModalLabelExp01b" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp01b">Spatial uncertainty mapping</h5>
+                      <h5 class="modal-title" id="ModalLabelExp01b">Uncertainty across all sfCO₂ reconstructions</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment applies the uncertainity evaluation approach described in Ford et al. (2024; <a href=https://doi.org/10.1029/2024GB008188>link</a>) to estimate the uncertainty in the ocean CO<sub>2</sub> sink from the two dominant uncertainty components;
-                      (1) the fCO<sub>2 (sw)</sub> evaluation (or called the fCO<sub>2</sub> mapping) and (2) the gas transfer coefficient. We estimate time varying uncertainties due to these two components, instead of relying on fixed values.
+                      This experiment applies the uncertainty evaluation approach of Ford et al. (2024; <a href="https://doi.org/10.1029/2024GB008188" target="_blank" rel="noopener noreferrer">link</a>) to estimate the uncertainty in the ocean carbon sink from its two dominant components: (1) the sfCO₂ reconstruction and (2) the gas transfer coefficient. Both uncertainties are estimated as time-varying rather than fixed values.
                       <br />
                       <br />
-                      This approach is applied to each sfCO₂ product submitted to the GCB, and the results are updated yearly.
+                      The approach is applied to each sfCO₂ reconstruction method submitted to the GCB, and the results are updated annually.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Uncertainties due to the fCO<sub>2</sub> mapping vary on the methodology used. Uncertainties are time varying for both fCO<sub>2</sub> mapping and gas transfer
+                      <strong>Key findings:</strong> The uncertainty due to the sfCO₂ reconstruction depends on the sfCO₂ reconstruction method used. The uncertainties due to both the sfCO₂ reconstruction and the gas transfer coefficient vary over time.
                       <br />
                       <br />
-                      <strong>Tools:</strong> The analysis is conducted in Python, and the analysis code can be found here: <a href =https://github.com/JamieLab/SOCOMv2/tree/main/Experiment_1>Link</a>.
-                      The analysis is reliant on the code base within the OceanICU framework: <a href=https://github.com/JamieLab/OceanICU/tree/main>Link</a>
+                      <strong>Tools:</strong> The analysis is conducted in Python; the code is available <a href="https://github.com/JamieLab/SOCOMv2/tree/main/Experiment_1" target="_blank" rel="noopener noreferrer">here</a>.
+                      It builds on the <a href="https://github.com/JamieLab/OceanICU/tree/main" target="_blank" rel="noopener noreferrer">OceanICU framework</a>.
                     </div>
                   </div>
                 </div>
