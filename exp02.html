@@ -22,26 +22,28 @@
     <span class="section-label">Experiment</span>
     <h2>EXP 02: Multiple hindcast testbed</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">5 GOBMs × 9 sfCO₂ reconstructions under SOCATv2023 conditions</p>
-    
+    <p style="max-width:700px;margin-bottom:2rem">Assesses how sparse SOCAT sampling affects sfCO₂ reconstructions and the ocean carbon sink.</p>
+
     <div class="content-box">
       <h3>Overview</h3>
-      <p>This experiment uses multiple global ocean biogeochemical models (GOBMs) with various sfCO₂ reconstructions under SOCATv2023 conditions.</p>
-      
+      <p>sfCO₂ reconstruction methods are trained on sparse sfCO₂ observations, so their skill in unsampled regions cannot be tested against the real ocean. This experiment uses GOBMs as a known model truth to assess how well each sfCO₂ reconstruction method reproduces sfCO₂, FCO₂ and the ocean carbon sink.</p>
+
       <h3>Lead Author</h3>
       <a class="cc-email" data-email="alizee.roobaert" data-domain="vliz.be"></a>
 
       <h3>Manuscript</h3>
-      <p>Alizée Roobaert, Daniel J Ford, Mohanan G Sreeush, et al. Reconciling ocean carbon uptake estimates: a multi-model assessment of surface ocean CO₂ reconstruction skill within the SOCOMv2 initiative. ESS Open Archive. 20 May 2026.</p>
+      <p>Alizée Roobaert, Daniel J. Ford, Mohanan G. Sreeush, et al. Reconciling ocean carbon uptake estimates: a multi-model assessment of surface ocean CO₂ reconstruction skill within the SOCOMv2 initiative. <em>ESS Open Archive</em>, 20 May 2026.</p>
     </div>
 
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="https://doi.org/10.22541/essoar.15003624/v1" target="_blank">https://doi.org/10.22541/essoar.15003624/v1</a></td></tr>
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In review</td></tr>
-        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 2 investigates the impact of the sparse SOCAT sampling on the representation of the ocean CO₂ sink. Five global ocean biogeochemical models (GOBMs) were subsampled to the SOCAT observations along with the environmental predictors that the fCO₂ products rely on. The GOBM acts as a model truth to assess the ability of each fCO₂ product to represent the ocean fCO₂sw, and ocean CO₂ sink. Air-sea CO₂ fluxes were calculated using a consistent framework.</td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2023 <a href="https://socat.info/index.php/version-2023/" target="_blank">https://socat.info/index.php/version-2023/</a></td></tr>
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="https://doi.org/10.22541/essoar.15003624/v1" target="_blank" rel="noopener noreferrer">10.22541/essoar.15003624/v1</a></td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">5 GOBMs</td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">9</td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://socat.info/index.php/version-2023/" target="_blank" rel="noopener noreferrer">SOCATv2023</a></td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">Each GOBM is subsampled to the SOCAT sampling, together with the predictor variables. Each sfCO₂ reconstruction method then reconstructs the full sfCO₂ field, and the sfCO₂ reconstructions are compared with the GOBM truth. FCO₂ is calculated in a consistent framework.</td></tr>
       </table>
     </div>
 
@@ -65,26 +67,26 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Multiple hindcast testbed<br>-<br>GOBMs × sfCO₂ reconstructions</h4>
+              <h4 class="card-title m-3">Skill of 9 sfCO₂ reconstruction methods across 5 GOBMs</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp02">Learn more</button>
               <div class="modal fade" id="ModalExp02" tabindex="-1" aria-labelledby="ModalLabelExp02" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp02">Multiple hindcast testbed</h5>
+                      <h5 class="modal-title" id="ModalLabelExp02">Reconstruction skill across GOBMs</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment evaluates reconstruction skill across 5 Global Ocean Biogeochemical Models (GOBMs) using 9 different sfCO₂ reconstructions under SOCATv2023 conditions.
+                      This experiment evaluates 9 sfCO₂ reconstruction methods against 5 GOBMs, each subsampled to SOCATv2023.
                       <br />
                       <br />
-                      We assess how different model backgrounds and sfCO₂ reconstructions affect the accuracy and uncertainty of sea surface CO₂ estimates.
+                      We assess how the choice of GOBM and sfCO₂ reconstruction method affects the accuracy and uncertainty of the sfCO₂ reconstructions, FCO₂ and the ocean carbon sink.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Reconstruction performance varies significantly across GOBMs and sfCO₂ reconstructions, highlighting the importance of model choice.
+                      <strong>Key findings:</strong> The skill of the sfCO₂ reconstructions varies considerably across GOBMs and sfCO₂ reconstruction methods.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, R, statistical analysis, model intercomparison
@@ -115,26 +117,26 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Model intercomparison<br>-<br>Performance metrics analysis</h4>
+              <h4 class="card-title m-3">Performance metrics of sfCO₂ reconstruction methods across GOBMs</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp02b">Learn more</button>
               <div class="modal fade" id="ModalExp02b" tabindex="-1" aria-labelledby="ModalLabelExp02b" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp02b">Model intercomparison</h5>
+                      <h5 class="modal-title" id="ModalLabelExp02b">Performance metrics</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This component performs detailed intercomparison of sfCO₂ reconstructions across different GOBMs using comprehensive performance metrics.
+                      The sfCO₂ reconstructions are compared with the GOBM truth using bias, RMSE and correlation, per region.
                       <br />
                       <br />
-                      We analyze bias, RMSE, and correlation patterns to identify optimal method-model combinations for different ocean regions.
+                      This shows which sfCO₂ reconstruction methods perform best in which ocean regions, and how robust that is across GOBMs.
                       <br />
                       <br />
-                      <strong>Key findings:</strong> No single method performs best across all models; optimal choices depend on regional characteristics and data availability.
+                      <strong>Key findings:</strong> No single sfCO₂ reconstruction method performs best across all GOBMs; performance depends on the region and the availability of sfCO₂ observations.
                       <br />
                       <br />
                       <strong>Tools:</strong> Python, R, performance metrics, statistical analysis
