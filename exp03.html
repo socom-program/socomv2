@@ -20,14 +20,14 @@
 <section id="exp03">
   <div class="section reveal">
     <span class="section-label">Experiment</span>
-    <h2>EXP 03: Large ensemble testbed</h2>
+    <h2>EXP 03: Large Ensemble Testbed</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">18-member CMIP6 ESM testbed capturing diverse climate states</p>
-    
+    <p style="max-width:700px;margin-bottom:2rem">Tests whether reconstruction biases are robust across model structures and internal variability.</p>
+
     <div class="content-box">
       <h3>Overview</h3>
-      <p>This experiment uses an 18-member CMIP6 Earth System Model testbed to assess reconstruction bias in four data products across model structures and internal variability.</p>
-      
+      <p>Experiment 2 assessed sfCO₂ reconstruction methods using five GOBMs. This experiment extends that approach to multiple ESMs and multiple ensemble members per ESM. The question is whether the bias of each sfCO₂ reconstruction method is consistent across model structures and internal variability.</p>
+
       <h3>Lead Author</h3>
       <a class="cc-email" data-email="th3020" data-domain="columbia.edu"></a>
 
@@ -38,10 +38,38 @@
     <div class="content-box">
       <h3>Experiment Information</h3>
       <table class="exp-info-table">
-        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="#" target="_blank">To be added</a></td></tr>
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
-        <tr><td class="exp-info-label">Description:</td><td class="exp-info-value">Experiment 3 evaluates reconstruction bias of four independent data products by using a testbed of six CMIP6 Earth System Models (ESMs). 18 ESM ensemble members are sub-sampled based on the spatiotemporal coverage in SOCATv2024, and surface ocean pCO₂ is reconstructed globally over the period of 1983-2023 using the algorithms of the four data products. ESMs capture a range of potential surface ocean pCO₂ states in the ocean system by providing multiple ensemble members. This experiment expands on Experiment 2, where reconstruction skill is assessed using five GOBMs as a testbed. For Experiment 3 we ask: Is reconstruction bias of individual data products consistent and robust across model structures and internal variability?</td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2024 <a href="https://socat.info/index.php/version-2024/" target="_blank">https://socat.info/index.php/version-2024/</a></td></tr>
+        <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">
+          18 ensemble members from 6 CMIP6 ESMs:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>CanESM5 (Swart et al., 2019)</li>
+            <li>CanESM5-CanOE (Swart et al., 2019)</li>
+            <li>CESM2 (Danabasoglu, 2019)</li>
+            <li>CESM2-WACCM (Danabasoglu, 2019)</li>
+            <li>MPI-ESM1-2-LR (Wieners et al., 2019)</li>
+            <li>UKESM1-0-LL (Tang et al., 2019; Good et al., 2019)</li>
+          </ul>
+          <small>Three ensemble members per ESM.</small>
+        </td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
+          5 sfCO₂ reconstruction methods:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
+            <li>CMEMS-LSCE-v1 (Chau et al., 2022)<sup>1</sup></li>
+            <li>LDEO-ΔResidual (Heimdal et al., 2026)<sup>2</sup></li>
+            <li>UExP-FNN-U (Ford et al., 2024)</li>
+            <li>VLIZ-pySOMFFN (based on Landschützer et al., 2016)<sup>3</sup></li>
+          </ul>
+          <small>
+            The sfCO₂ reconstruction methods may differ methodologically from the versions submitted to GCB 2024 and those used in Experiment 2. Combined with the different testbed period and SOCAT version, comparisons with Experiment 2 should be interpreted with caution.<br>
+            <sup>1</sup> Lower spatial resolution (1°) version of the product used for the GCB, with ensembles of 50 instead of 100 members.<br>
+            <sup>2</sup> Not included in the GCB, where LDEO-HPD is used (Gloege et al., 2022; Bennington et al., 2022). LDEO-ΔResidual uses an eXtreme Gradient Boosting regression with ΔpCO₂-Residual as target variable, which shows improved skill (Heimdal et al., 2026).<br>
+            <sup>3</sup> Python reimplementation of VLIZ-SOMFFN with extended hyperparameter tuning. Not yet published; this testbed provides a first assessment of its skill.
+          </small>
+        </td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://socat.info/index.php/version-2024/" target="_blank" rel="noopener noreferrer">SOCATv2024</a></td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">Experiment 3 evaluates the reconstruction bias of five sfCO₂ reconstruction methods using a testbed of six CMIP6 ESMs. Eighteen ESM ensemble members are subsampled to the spatiotemporal coverage of SOCATv2024, and sfCO₂ is reconstructed globally over 1983–2023 with each sfCO₂ reconstruction method. By providing multiple ensemble members, the ESMs capture a range of possible sfCO₂ states. This experiment expands on Experiment 2, where the skill of the sfCO₂ reconstruction methods is assessed using five GOBMs as a testbed. For Experiment 3 we ask: is the reconstruction bias of each sfCO₂ reconstruction method consistent and robust across model structures and internal variability?</td></tr>
       </table>
     </div>
 
@@ -51,7 +79,9 @@
           <div id="CarouselExp03" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active border">
-                <img src="images/Experiment3/Fig1_timeseries.jpg" class="d-block w-100 exp-img-large3" alt="EXP 03 Figure 1">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <img src="images/Experiment3/Ex3_Fig1.png" class="d-block w-100" alt="EXP 03 Figure 1">
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp03" data-bs-slide="prev">
@@ -63,29 +93,26 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Large ensemble testbed<br>-<br>CMIP6 ESM climate states</h4>
+              <h4 class="card-title m-3">[Figuurtitel]</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp03">Learn more</button>
               <div class="modal fade" id="ModalExp03" tabindex="-1" aria-labelledby="ModalLabelExp03" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp03">Large ensemble testbed</h5>
+                      <h5 class="modal-title" id="ModalLabelExp03">[Titel]</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This experiment employs an 18-member CMIP6 Earth System Model ensemble to capture diverse climate states and evaluate sfCO₂ reconstruction robustness.
+                      [Tekst]
                       <br />
                       <br />
-                      We assess how sfCO₂ reconstructions perform across different climate regimes and identify systematic biases or dependencies on climate state.
+                      <strong>Key findings:</strong> [Tekst]
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Large ensembles reveal significant climate-state dependencies in reconstruction performance.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, R, CMIP6 data analysis, ensemble statistics
+                      <strong>Tools:</strong> [Tekst]
                     </div>
                   </div>
                 </div>
@@ -99,7 +126,9 @@
           <div id="CarouselExp03b" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active border">
-                  <img src="images/Experiment3/Fig2_testbed.jpg" class="d-block w-100 exp-img-large3" alt="EXP 03 Figure 2">
+                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <img src="images/Experiment3/Ex3_Fig2.png" class="d-block w-100" alt="EXP 03 Figure 2">
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp03b" data-bs-slide="prev">
@@ -111,29 +140,26 @@
               <span class="visually-hidden">Next</span>
             </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Climate state analysis<br>-<br>Ensemble variability assessment</h4>
+              <h4 class="card-title m-3">[Figuurtitel]</h4>
               <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp03b">Learn more</button>
               <div class="modal fade" id="ModalExp03b" tabindex="-1" aria-labelledby="ModalLabelExp03b" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp03b">Climate state analysis</h5>
+                      <h5 class="modal-title" id="ModalLabelExp03b">[Titel]</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mb-2">
                       <strong>Methodology</strong>
                       <br />
                       <br />
-                      This component analyzes ensemble variability across different climate states to identify robust sfCO₂ reconstructions.
+                      [Tekst]
                       <br />
                       <br />
-                      We quantify the sensitivity of reconstruction performance to climate variability and develop climate-adaptive sfCO₂ reconstructions.
+                      <strong>Key findings:</strong> [Tekst]
                       <br />
                       <br />
-                      <strong>Key findings:</strong> Ensemble-based approaches improve robustness across diverse climate conditions compared to single-model methods.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, R, ensemble statistics, climate analysis
+                      <strong>Tools:</strong> [Tekst]
                     </div>
                   </div>
                 </div>
