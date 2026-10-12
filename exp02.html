@@ -40,10 +40,40 @@
       <table class="exp-info-table">
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In review</td></tr>
         <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value"><a href="https://doi.org/10.22541/essoar.15003624/v1" target="_blank" rel="noopener noreferrer">10.22541/essoar.15003624/v1</a></td></tr>
-        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">5 GOBMs</td></tr>
-        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">9</td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">
+          5 GOBMs:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>FESOM2.1-REcoM3 (Gürses et al., 2023)</li>
+            <li>CESM-ETHZ (Doney et al., 2009)</li>
+            <li>NEMO-PISCES (Aumont et al., 2015)</li>
+            <li>MRI-ESM2-2 (Nakano et al., 2011; Urakawa et al., 2020; Sakamoto et al., 2023)</li>
+            <li>NorESM1-OCv1.2 (Schwinger et al., 2016)<sup>1</sup></li>
+          </ul>
+          <small>
+            Model output from GCB 2023 (Friedlingstein et al., 2023). Together, these GOBMs span a range of circulation schemes, biogeochemical complexity and parameterizations, to test whether the skill of the sfCO₂ reconstruction methods is robust across GOBMs.<br>
+            <sup>1</sup> GCB 2024 version, identical to GCB 2023 except that sfCO₂ is referenced to moist air instead of dry air, as required for a consistent recalculation of FCO₂.
+          </small>
+        </td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
+          9 sfCO₂ reconstruction methods:
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>VLIZ-SOMFFN (Landschützer et al., 2016)</li>
+            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
+            <li>JMA-MLR (Iida et al., 2021)</li>
+            <li>OceanSODA-ETHZv2 (Gregor et al., 2024)</li>
+            <li>UExP-FNN-U (Ford et al., 2024a)</li>
+            <li>NIES-ML3 (Zeng et al., 2022)</li>
+            <li>CSIR-ML6 (Gregor et al., 2019)</li>
+            <li>CMEMS-LSCE-v1 (Chau et al., 2022)<sup>2</sup></li>
+            <li>LDEO pCO2-Residual (Bennington et al., 2022a)<sup>3</sup></li>
+          </ul>
+          <small>
+            <sup>2</sup> Lower spatial resolution version of CMEMS-FFNNv2, which is used for the GCB.<br>
+            <sup>3</sup> Used instead of LDEO-HPD, the version used for the GCB (Gloege et al., 2022; Bennington et al., 2022b). LDEO-HPD relies on GOBM priors, which would introduce the model truth into the sfCO₂ reconstruction. LDEO pCO2-Residual uses a similar eXtreme Gradient Boosting regression and achieves comparable validation performance (Bennington et al., 2022a, b).
+          </small>
+        </td></tr>
         <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://socat.info/index.php/version-2023/" target="_blank" rel="noopener noreferrer">SOCATv2023</a></td></tr>
-        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">EXP 02 investigates the impact of sparse SOCAT sampling on the representation of the ocean carbon sink. Five GOBMs were subsampled to the sfCO₂ observations, along with the predictor variables used by the sfCO₂ reconstruction methods. Each GOBM acts as a model truth to assess the ability of each sfCO₂ reconstruction method to represent sfCO₂ and the ocean carbon sink. FCO₂ was calculated using a consistent framework.</td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">Experiment 2 investigates the impact of sparse SOCAT sampling on the representation of the ocean carbon sink. Five GOBMs were subsampled to the sfCO₂ observations, along with the predictor variables used by the sfCO₂ reconstruction methods. Each GOBM acts as a model truth to assess the ability of each sfCO₂ reconstruction method to represent sfCO₂ and the ocean carbon sink. FCO₂ was calculated using a consistent framework.</td></tr>
       </table>
     </div>
 
