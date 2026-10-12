@@ -4,11 +4,11 @@ const navLinks = [
   {
     text: 'Experiments',
     dropdown: [
-      { href: 'exp01.html', text: 'EXP 01: Geospatial uncertainty' },
-      { href: 'exp02.html', text: 'EXP 02: Multiple hindcast testbed' },
-      { href: 'exp03.html', text: 'EXP 03: Large ensemble testbed' },
-      { href: 'exp04.html', text: 'EXP 04: Climatological testbed' },
-      { href: 'exp05.html', text: 'EXP 05: Temperature corrections' }
+      { href: 'exp01.html', text: 'EXP 01: Geospatial Uncertainty' },
+      { href: 'exp02.html', text: 'EXP 02: Multiple Hindcast Testbed' },
+      { href: 'exp03.html', text: 'EXP 03: Large Ensemble Testbed' },
+      { href: 'exp04.html', text: 'EXP 04: Climatological Testbed' },
+      { href: 'exp05.html', text: 'EXP 05: Temperature Corrections' }
     ]
   },
   { href: 'publications.html', text: 'Publications' },
