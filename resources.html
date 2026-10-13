@@ -10,6 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+  .logo-tile { text-align: center; }
+  .logo-preview { height: 160px; display: flex; align-items: center; justify-content: center; padding: 1.5rem; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); }
+  .logo-preview img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .logo-label { margin: 0.75rem 0 0.25rem; font-weight: 600; }
+</style>
 </head>
 <body>
 
@@ -46,8 +53,28 @@
 
     <h3 class="sec-h2">See Also</h3>
     <div class="res-grid">
-      <div class="res-tile"><span class="res-name">SOCOM</span><p class="res-desc">Original SOCOM site with historical content and documentation.</p><a class="res-link" href="https://www.bgc-jena.mpg.de/SOCOM/" target="_blank">Visit SOCOMv1 site</a></div>
+      <div class="res-tile"><span class="res-name">SOCOMv1</span><p class="res-desc">Original SOCOMv1 site with historical content and documentation.</p><a class="res-link" href="https://www.bgc-jena.mpg.de/SOCOM/" target="_blank">Visit SOCOMv1 site</a></div>
       <div class="res-tile"><span class="res-name">GCB</span><p class="res-desc">Global Carbon Budget – annually estimates the ocean carbon sink from flux data products and GOBMs.</p><a class="res-link" href="https://www.globalcarbonproject.org/carbonbudget/" target="_blank">Global Carbon Project</a></div>
+    </div>
+
+    <h3 class="sec-h2">SOCOMv2 Logos</h3>
+    <p>Feel free to use the SOCOMv2 logo in presentations and publications related to SOCOMv2.</p>
+    <div class="logo-grid">
+      <div class="logo-tile">
+        <div class="logo-preview" style="background:#ffffff"><img src="images/SOCOM_logo.png" alt="SOCOMv2 logo (Colour)"></div>
+        <p class="logo-label">Colour</p>
+        <a class="res-link" href="images/SOCOM_logo.png" download>Download PNG</a>
+      </div>
+      <div class="logo-tile">
+        <div class="logo-preview" style="background:#ffffff"><img src="images/SOCOM_logo_white.png" alt="SOCOMv2 logo (Black)"></div>
+        <p class="logo-label">Black</p>
+        <a class="res-link" href="images/SOCOM_logo_white.png" download>Download PNG</a>
+      </div>
+      <div class="logo-tile">
+        <div class="logo-preview" style="background:#0f2a3d"><img src="images/SOCOM_logo_black.png" alt="SOCOMv2 logo (White)"></div>
+        <p class="logo-label">White</p>
+        <a class="res-link" href="images/SOCOM_logo_black.png" download>Download PNG</a>
+      </div>
     </div>
   </div>
 </section>
