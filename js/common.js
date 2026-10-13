@@ -11,10 +11,10 @@ const navLinks = [
       { href: 'exp05.html', text: 'EXP 05: Temperature Corrections' }
     ]
   },
-  { href: 'publications.html', text: 'Publications' },
-  { href: 'methods.html', text: 'Methods' },
+  { href: 'reconstructions.html', text: 'Reconstructions' },
   { href: 'resources.html', text: 'Resources' },
-  { href: 'organizations.html', text: 'Organizations' },
+  { href: 'publications.html', text: 'Publications' },
+  { href: 'partners.html', text: 'Partners' },
   { href: 'events.html', text: 'Events' },
   { href: 'contact.html', text: 'Contact' }
 ];
