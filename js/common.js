@@ -8,7 +8,7 @@ const navLinks = [
       { href: 'exp02.html', text: 'EXP 02: Multiple Hindcast Testbed' },
       { href: 'exp03.html', text: 'EXP 03: Large Ensemble Testbed' },
       { href: 'exp04.html', text: 'EXP 04: Climatological Testbed' },
-      { href: 'exp05.html', text: 'EXP 05: Temperature Corrections' }
+      { href: 'exp05.html', text: 'EXP 05: Vertical Temperature Gradients' }
     ]
   },
   { href: 'reconstructions.html', text: 'Reconstructions' },
@@ -29,7 +29,7 @@ const footerAttribution = 'Website created and maintained by the SOCOMv2 team';
 // Generate navigation menu
 function generateNavigation() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  
+
   let navHTML = `
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
@@ -46,7 +46,7 @@ function generateNavigation() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
   `;
-  
+
   navLinks.forEach(link => {
     if (link.dropdown) {
       // Check if any dropdown item is active
@@ -73,14 +73,14 @@ function generateNavigation() {
       `;
     }
   });
-  
+
   navHTML += `
           </ul>
         </div>
       </div>
     </nav>
   `;
-  
+
   return navHTML;
 }
 
