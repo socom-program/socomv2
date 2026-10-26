@@ -23,7 +23,7 @@ const navLinks = [
 const logoPath = 'images/SOCOM_logo.png';
 
 // Footer configuration
-const footerCopyright = '© 2026 SOCOMv2 — Surface Ocean pCO₂ Mapping Program';
+const footerCopyright = '© 2026 SOCOMv2 — Surface Ocean pCO₂ Mapping program';
 const footerAttribution = 'Website created and maintained by the SOCOMv2 team';
 
 // Generate navigation menu
