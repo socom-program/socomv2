@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EXP 05 - SOCOM v2</title>
+<title>EXP 06 - SOCOM v2</title>
 <link rel="icon" type="image/png" href="images/round_socomv2_logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +16,30 @@
 <!-- NAV -->
 <div id="nav-container"></div>
 
-<!-- EXP 05 -->
-<section id="exp05">
+<!-- EXP 06 -->
+<section id="exp06">
   <div class="section reveal">
     <span class="section-label">Experiment</span>
-    <h2>EXP 05: Vertical Temperature Gradients</h2>
+    <h2>EXP 06: Observing Design Experiment</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">Quantifies how near-surface temperature gradients affect FCO₂ and the ocean carbon sink.</p>
+    <p style="max-width:700px;margin-bottom:2rem">Evaluates how enhanced in situ sfCO₂ sampling beyond the current observing network impacts sfCO₂ reconstruction skill and the accuracy of ocean carbon sink estimates.</p>
 
     <div class="content-box">
       <h3>Overview</h3>
-      <p>Previous studies have identified that the ocean carbon sink estimated from bulk air and seawater CO₂ may be underestimated due to overlooking naturally occurring vertical temperature gradients that are known to exist in the water close to the ocean’s surface.
-      These natural gradients include (1) the cool skin effect, where the very surface (≈10 μm) is cooler than the underlying water, and (2) diurnal warm layers, where under conditions of high insolation and low wind speed the top few metres of the ocean are heated relative to the waters further below.
-      Ford et al. (<a href="https://doi.org/10.1038/s41597-026-07532-5" target="_blank" rel="noopener noreferrer">2026</a>) showed that a third, artificial gradient is also present due to a warm bias in the sfCO₂ observations in SOCAT.
+      <p>Reconstructions of full field sfCO₂ rely on ship-based observations from SOCAT, which are sparse in space and time.
+      EXP 06 evaluates how enhanced in situ sampling affects sfCO₂ reconstruction skill and the accuracy of ocean carbon sink estimates, and quantifies the resulting uncertainty reductions.
+      The experiment focuses on sampling that can realistically be added to the existing observational network with minimal cost, including research and commercial vessels that currently frequent the Southern Ocean, discontinued platforms, and Uncrewed Surface Vehicles (USVs).
+      With these enhanced observational data sets, sfCO₂ is reconstructed globally using seven reconstruction methods, and FCO₂ is calculated using the sfCO₂ reconstructions.
+      Reconstruction skill is assessed by applying a testbed approach (three GOBMs) and evaluating the reconstructed sfCO₂ and calculated FCO₂ against the testbed truth.
       <br />
-      This experiment investigates the impact of these natural and artificial temperature gradients on FCO₂ and the ocean carbon sink estimated from the sfCO₂ reconstructions.</p>
+      <br />
+      <em>With only modest, but potentially immediately feasible, enhanced in situ sampling beyond the existing sampling network, what is the expected uncertainty reduction in sfCO₂ reconstructions, and subsequently, the global ocean carbon sink estimate?</em></p>
 
       <h3>Lead Author</h3>
-      <a class="cc-email" data-email="d.ford" data-domain="exeter.ac.uk"></a>
+      <p>Thea Heimdal</p>
 
       <h3>Manuscript</h3>
-      <p>Daniel J. Ford, Amanda Fay, Thea Heimdal Hatlen et al. Impact of near-surface temperature gradients on the ensemble of sfCO₂ products within the SOCOMv2 initiative (in preparation).</p>
+      <p>In preparation</p>
 
     </div>
 
@@ -45,122 +48,60 @@
       <table class="exp-info-table">
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
         <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">To be added</td></tr>
-        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">None (sfCO₂ observations)</td></tr>
-        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
-          <strong>8 sfCO₂ reconstruction methods:</strong>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">
+          <strong>3 GOBMs:</strong>
           <ul style="margin:0.5rem 0;padding-left:1.2rem">
-            <li>sfCO₂-Residual (Bennington et al., 2022)</li>
-            <li>NIES-ML3 (Zeng et al., 2022)</li>
-            <li>VLIZ-SOMFFN (Landschützer et al., 2016)</li>
-            <li>UExP-FNN-U (Watson et al., 2020; Ford et al., 2024)</li>
-            <li>JMA-MLR (Iida et al., 2021)</li>
-            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
-            <li>LDEO-HPD (Gloege et al., 2022; Bennington et al., 2022)</li>
-            <li>CMEMS-LSCE-FFNN (Chau et al., 2022)</li>
+            <li>FESOM2.1-REcoM3 (Gürses et al., 2023)</li>
+            <li>NEMO-PISCES (Aumont et al., 2015)</li>
+            <li>MRI-ESM2-2 (Nakano et al., 2011; Urakawa et al., 2020; Sakamoto et al., 2023)</li>
           </ul>
+          This testbed is identical to that used in EXP 07. GOBM output is from GCB 2025 (Friedlingstein et al., 2025). Together, these GOBMs span a range of circulation schemes, biogeochemical complexity and parameterizations, to test whether the skill of the sfCO₂ reconstruction methods is robust across testbed models.
         </td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://zenodo.org/records/15706025" target="_blank" rel="noopener noreferrer">Recalculated SOCATv2024</a></td></tr>
-        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value"><strong>EXP 05</strong> investigates the impact of vertical temperature gradients on the sfCO₂ reconstructions. Each group provided two runs of its sfCO₂ reconstruction method: the first uses the sfCO₂ observations from SOCAT as provided, and the second uses the recalculated sfCO₂ observations, corrected for warm layers and an artificial warm bias. FCO₂ is calculated in a consistent framework for all sfCO₂ reconstruction methods. All sfCO₂ reconstruction methods use the same SST and SSS datasets, and a modified version of the sfCO₂ observations from which 5% of the observations are removed as an independent test dataset. This is an experiment-wide methodological change compared with GCB 2024.</td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
+          <strong>7 sfCO₂ reconstruction methods:</strong>
+          <ul style="margin:0.5rem 0;padding-left:1.2rem">
+            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
+            <li>CMEMS-LSCE-v1 (Chau et al., 2022)<sup>1</sup></li>
+            <li>LDEO-ΔResidual (Heimdal et al., 2026)<sup>2</sup></li>
+            <li>NIES-ML3 (Zeng et al., 2022)</li>
+            <li>UExP-FNN-U (Watson et al., 2020; Ford et al., 2024)</li>
+            <li>UExS-LARS-LASSO (Schuster et al., 2013)</li>
+            <li>VLIZ-pySOMFFN (based on Landschützer et al., 2016)<sup>3</sup></li>
+          </ul>
+          The sfCO₂ reconstruction methods are identical to those used in EXP 07, but may differ methodologically from the versions submitted to GCB 2024 and those used in other SOCOM experiments.
+          <ol style="margin:0.5rem 0;padding-left:1.2rem;font-size:0.85rem">
+            <li>Lower spatial resolution (1°) version of the product used for the GCB, with ensembles of 50 instead of 100 members.</li>
+            <li>Not included in the GCB, where LDEO-HPD is used (Gloege et al., 2022; Bennington et al., 2022). LDEO-ΔResidual uses an eXtreme Gradient Boosting regression with ΔpCO₂-Residual as target variable, which shows improved skill (Heimdal et al., 2026).</li>
+            <li>Python reimplementation of VLIZ-SOMFFN with extended hyperparameter tuning. Not yet published.</li>
+          </ol>
+        </td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">SOCATv2025 (Bakker et al., 2025)</td></tr>
+        <tr><td class="exp-info-label">Time period:</td><td class="exp-info-value">1983–2024</td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">
+          <strong>EXP 06</strong> uses a total of seven sampling masks. The basis for all seven masks is monthly 1°×1° gridded SOCAT data (version 2025; Bakker et al., 2025) for 1983–2024 (‘BASE’; Figure, gray). For each of the six enhanced sampling masks, the ‘BASE’ mask is augmented with ship or USV locations for the years 2020–2024. For the enhancements, the impact of pragmatic, achievable additions to the observing system is emphasized, as opposed to an ideal network design. These include ships that do not currently observe sfCO₂ but could help address gaps in sfCO₂ observations in the Southern Hemisphere and the high-latitude Northern Hemisphere with relatively low effort.
+          <br />
+          <br />
+          Tracks are compiled from (1) Voluntary Observing Ship (‘VOS’) lines that already provide other oceanographic data (Figure, yellow), (2) five research vessels (‘RV’), one cruise liner and one fishing vessel that frequent the Southern Ocean and could be outfitted with carbon monitoring equipment (Figure, green), and (3) discontinued (‘DISC’) tracks that had previously contributed data to SOCAT (Figure, red). In addition, one mask includes the locations of all three classes of ship (‘ALL’). A further mask is based on planned sampling in the Southern Ocean by USVs (Heimdal et al., 2024) for the COCO2 project, where high-quality fCO₂ observations will be collected on four circumnavigations of Antarctica each austral winter (May–October) in 2026–2030 (Figure, blue). USV locations are combined with the ‘BASE’ (mask named ‘USV’) and the ‘BASE+ALL’ locations (mask named ‘USV+ALL’) for two additional experimental sampling masks.
+          <br />
+          <br />
+          Using a testbed of three GOBMs, sfCO₂ is reconstructed globally over the period 1983–2024 using seven reconstruction methods. Due to computational limitations for some reconstruction methods, only four performed all sampling experiments. All seven methods performed the ‘BASE’ and ‘ALL’ experiments.
+        </td></tr>
       </table>
     </div>
 
-    <div class="row g-4 text-center mt-5">
-      <div class="col-md-6">
+    <div class="row g-4 text-center mt-5 justify-content-center">
+      <div class="col-md-8">
         <div class="card shadow-lg rounded">
-          <div id="CarouselExp05" class="carousel slide" data-bs-ride="carousel">
+          <div id="CarouselExp06" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <img src="images/Experiment5/Ex5_Fig1.png" class="d-block w-100" alt="EXP 05 Figure 1">
+                <div class="carousel-placeholder" style="background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
+                  <img src="images/Experiment6/Ex6_Fig1.png" class="d-block w-100" alt="EXP 06 sampling masks">
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
             <div class="card-body">
-              <h4 class="card-title m-3">Impact of vertical temperature gradients on the ocean carbon sink across all sfCO₂ reconstructions, compared with independent estimates of the ocean carbon sink</h4>
-              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05">Learn more</button>
-              <div class="modal fade" id="ModalExp05" tabindex="-1" aria-labelledby="ModalLabelExp05" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp05">Temperature corrections</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body mb-2">
-                      <strong>Methodology</strong>
-                      <br />
-                      <br />
-                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including vertical temperature gradients.
-                      <br />
-                      <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
-                      <br />
-                      <br />
-                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, FluxEngine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow-lg rounded">
-          <div id="CarouselExp05b" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <img src="images/Experiment5/Ex5_Fig2.png" class="d-block w-100" alt="EXP 05 Figure 2">
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <div class="card-body">
-              <h4 class="card-title m-3">Sensitivity differs between sfCO₂ reconstruction methods</h4>
-              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05b">Learn more</button>
-              <div class="modal fade" id="ModalExp05b" tabindex="-1" aria-labelledby="ModalLabelExp05b" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp05b">Thermal stratification</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body mb-2">
-                      <strong>Methodology</strong>
-                      <br />
-                      <br />
-                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including vertical temperature gradients.
-                      <br />
-                      <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
-                      <br />
-                      <br />
-                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, FluxEngine
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h4 class="card-title m-3">Sampling masks: BASE (gray), VOS (yellow), RV (green), DISC (red) and USV (blue)</h4>
             </div>
           </div>
         </div>
