@@ -9,8 +9,8 @@ const navLinks = [
       { href: 'exp03.html', text: 'EXP 03: Large Ensemble Testbed' },
       { href: 'exp04.html', text: 'EXP 04: Climatological Testbed' },
       { href: 'exp05.html', text: 'EXP 05: Vertical Temperature Gradients' },
-      { href: 'exp06.html', text: 'EXP 06: Observing Design Experiment' },
-      { href: 'exp07.html', text: 'EXP 07: Argo Experiment' }
+      { href: 'exp06.html', text: 'EXP 06: Observing Design' },
+      { href: 'exp07.html', text: 'EXP 07: Argo Sampling' }
     ]
   },
   { href: 'reconstructions.html', text: 'Reconstructions' },
