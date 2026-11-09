@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EXP 05 - SOCOM v2</title>
+<title>EXP 07 - SOCOM v2</title>
 <link rel="icon" type="image/png" href="images/round_socomv2_logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,28 +16,23 @@
 <!-- NAV -->
 <div id="nav-container"></div>
 
-<!-- EXP 05 -->
-<section id="exp05">
+<!-- EXP 07 -->
+<section id="exp07">
   <div class="section reveal">
     <span class="section-label">Experiment</span>
-    <h2>EXP 05: Vertical Temperature Gradients</h2>
+    <h2>EXP 07: Argo Experiment</h2>
     <div class="section-divider"></div>
-    <p style="max-width:700px;margin-bottom:2rem">Quantifies how near-surface temperature gradients affect FCO₂ and the ocean carbon sink.</p>
+    <p style="max-width:700px;margin-bottom:2rem">More information about this experiment will be added soon.</p>
 
     <div class="content-box">
       <h3>Overview</h3>
-      <p>Previous studies have identified that the ocean carbon sink estimated from bulk air and seawater CO₂ may be underestimated due to overlooking naturally occurring vertical temperature gradients that are known to exist in the water close to the ocean’s surface.
-      These natural gradients include (1) the cool skin effect, where the very surface (≈10 μm) is cooler than the underlying water, and (2) diurnal warm layers, where under conditions of high insolation and low wind speed the top few metres of the ocean are heated relative to the waters further below.
-      Ford et al. (<a href="https://doi.org/10.1038/s41597-026-07532-5" target="_blank" rel="noopener noreferrer">2026</a>) showed that a third, artificial gradient is also present due to a warm bias in the sfCO₂ observations in SOCAT.
-      <br />
-      This experiment investigates the impact of these natural and artificial temperature gradients on FCO₂ and the ocean carbon sink estimated from the sfCO₂ reconstructions.</p>
+      <p>To be added</p>
 
       <h3>Lead Author</h3>
-      <a class="cc-email" data-email="d.ford" data-domain="exeter.ac.uk"></a>
+      <p>To be added</p>
 
       <h3>Manuscript</h3>
-      <p>Daniel J. Ford, Amanda Fay, Thea Heimdal Hatlen et al. Impact of near-surface temperature gradients on the ensemble of sfCO₂ products within the SOCOMv2 initiative (in preparation).</p>
-
+      <p>To be added</p>
     </div>
 
     <div class="content-box">
@@ -45,126 +40,11 @@
       <table class="exp-info-table">
         <tr><td class="exp-info-label">Status:</td><td class="exp-info-value">In preparation</td></tr>
         <tr><td class="exp-info-label">DOI:</td><td class="exp-info-value">To be added</td></tr>
-        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">None (sfCO₂ observations)</td></tr>
-        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">
-          <strong>8 sfCO₂ reconstruction methods:</strong>
-          <ul style="margin:0.5rem 0;padding-left:1.2rem">
-            <li>sfCO₂-Residual (Bennington et al., 2022)</li>
-            <li>NIES-ML3 (Zeng et al., 2022)</li>
-            <li>VLIZ-SOMFFN (Landschützer et al., 2016)</li>
-            <li>UExP-FNN-U (Watson et al., 2020; Ford et al., 2024)</li>
-            <li>JMA-MLR (Iida et al., 2021)</li>
-            <li>CarboScope (Rödenbeck et al., 2014, 2022)</li>
-            <li>LDEO-HPD (Gloege et al., 2022; Bennington et al., 2022)</li>
-            <li>CMEMS-LSCE-FFNN (Chau et al., 2022)</li>
-          </ul>
-        </td></tr>
-        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value"><a href="https://zenodo.org/records/15706025" target="_blank" rel="noopener noreferrer">Recalculated SOCATv2024</a></td></tr>
-        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value"><strong>EXP 05</strong> investigates the impact of vertical temperature gradients on the sfCO₂ reconstructions. Each group provided two runs of its sfCO₂ reconstruction method: the first uses the sfCO₂ observations from SOCAT as provided, and the second uses the recalculated sfCO₂ observations, corrected for warm layers and an artificial warm bias. FCO₂ is calculated in a consistent framework for all sfCO₂ reconstruction methods. All sfCO₂ reconstruction methods use the same SST and SSS datasets, and a modified version of the sfCO₂ observations from which 5% of the observations are removed as an independent test dataset. This is an experiment-wide methodological change compared with GCB 2024.</td></tr>
+        <tr><td class="exp-info-label">Testbed:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">SOCAT mask used:</td><td class="exp-info-value">To be added</td></tr>
+        <tr><td class="exp-info-label">Design:</td><td class="exp-info-value">To be added</td></tr>
       </table>
-    </div>
-
-    <div class="row g-4 text-center mt-5">
-      <div class="col-md-6">
-        <div class="card shadow-lg rounded">
-          <div id="CarouselExp05" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <img src="images/Experiment5/Ex5_Fig1.png" class="d-block w-100" alt="EXP 05 Figure 1">
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <div class="card-body">
-              <h4 class="card-title m-3">Impact of vertical temperature gradients on the ocean carbon sink across all sfCO₂ reconstructions, compared with independent estimates of the ocean carbon sink</h4>
-              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05">Learn more</button>
-              <div class="modal fade" id="ModalExp05" tabindex="-1" aria-labelledby="ModalLabelExp05" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp05">Temperature corrections</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body mb-2">
-                      <strong>Methodology</strong>
-                      <br />
-                      <br />
-                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including vertical temperature gradients.
-                      <br />
-                      <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
-                      <br />
-                      <br />
-                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, FluxEngine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow-lg rounded">
-          <div id="CarouselExp05b" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active border">
-                <div class="carousel-placeholder" style="height: 300px; background: var(--pale); display: flex; align-items: center; justify-content: center; color: var(--muted);">
-                  <img src="images/Experiment5/Ex5_Fig2.png" class="d-block w-100" alt="EXP 05 Figure 2">
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#CarouselExp05b" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <div class="card-body">
-              <h4 class="card-title m-3">Sensitivity differs between sfCO₂ reconstruction methods</h4>
-              <button type="button" class="btn btn-saumon text-dark" data-bs-toggle="modal" data-bs-target="#ModalExp05b">Learn more</button>
-              <div class="modal fade" id="ModalExp05b" tabindex="-1" aria-labelledby="ModalLabelExp05b" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalLabelExp05b">Thermal stratification</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body mb-2">
-                      <strong>Methodology</strong>
-                      <br />
-                      <br />
-                      This experiment examines how near-surface temperature gradients affect FCO₂ and the importance of including vertical temperature gradients.
-                      <br />
-                      <br />
-                      We quantify the impact of using different temperature measurement depths and correction schemes on FCO₂ and the ocean carbon sink.
-                      <br />
-                      <br />
-                      <strong>Key findings:</strong> Including vertical temperature gradients can significantly increase the ocean carbon sink, by up to 1 Pg C yr⁻¹.
-                      <br />
-                      <br />
-                      <strong>Tools:</strong> Python, FluxEngine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
