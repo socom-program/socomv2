@@ -1,14 +1,16 @@
 // Navigation menu configuration
 const navLinks = [
   { href: 'index.html', text: 'About' },
-  {
+    {
     text: 'Experiments',
     dropdown: [
       { href: 'exp01.html', text: 'EXP 01: Uncertainty Propagation' },
       { href: 'exp02.html', text: 'EXP 02: Multiple Hindcast Testbed' },
       { href: 'exp03.html', text: 'EXP 03: Large Ensemble Testbed' },
       { href: 'exp04.html', text: 'EXP 04: Climatological Testbed' },
-      { href: 'exp05.html', text: 'EXP 05: Vertical Temperature Gradients' }
+      { href: 'exp05.html', text: 'EXP 05: Vertical Temperature Gradients' },
+      { href: 'exp06.html', text: 'EXP 06: Observing Design Experiment' },
+      { href: 'exp07.html', text: 'EXP 07: Argo Experiment' }
     ]
   },
   { href: 'reconstructions.html', text: 'Reconstructions' },
