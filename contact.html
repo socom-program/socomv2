@@ -10,6 +10,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .contact-grid .cc {
+    display: flex;
+    flex-direction: column;
+  }
+  .cc-roles {
+    min-height: 6.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .cc-roles .cc-exp {
+    margin: 0;
+  }
+  .cc-roles .cc-exp + .cc-exp {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 0.4rem;
+    margin-top: 0.4rem;
+  }
+  .contact-grid .cc-affil {
+    margin-bottom: 1rem;
+  }
+  .contact-grid .cc-email {
+    margin-top: auto;
+    align-self: flex-start;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 0.78rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    overflow-wrap: anywhere;
+  }
+</style>
 </head>
 <body>
 
@@ -25,38 +58,50 @@
     <p>SOCOMv2 is an open initiative. To participate or ask about the project, contact the coordinating team.</p>
     <div class="contact-grid">
       <div class="cc">
-        <p class="cc-exp" style="margin-bottom:.3rem">General Contact</p>
-        <p class="cc-exp" style="border-top:1px solid rgba(0,0,0,.08);padding-top:.3rem">EXP 02: Multiple Hindcast Testbed</p>
+        <div class="cc-roles">
+          <p class="cc-exp">General Contact</p>
+          <p class="cc-exp">EXP 02: Multiple Hindcast Testbed</p>
+        </div>
         <p class="cc-name">Alizée Roobaert</p>
         <p class="cc-affil">Flanders Marine Institute (VLIZ), Belgium</p>
         <a class="cc-email" data-email="alizee.roobaert" data-domain="vliz.be"></a>
       </div>
       <div class="cc">
-        <p class="cc-exp" style="margin-bottom:.3rem">EXP 01: Uncertainty Propagation</p>
-        <p class="cc-exp" style="border-top:1px solid rgba(0,0,0,.08);padding-top:.3rem">EXP 05: Vertical Temperature Gradients</p>
+        <div class="cc-roles">
+          <p class="cc-exp">EXP 01: Uncertainty Propagation</p>
+          <p class="cc-exp">EXP 05: Vertical Temperature Gradients</p>
+        </div>
         <p class="cc-name">Daniel J. Ford</p>
         <p class="cc-affil">University of Exeter, UK</p>
         <a class="cc-email" data-email="d.ford" data-domain="exeter.ac.uk"></a>
       </div>
       <div class="cc">
-        <p class="cc-exp" style="margin-bottom:.3rem">EXP 03: Large Ensemble Testbed</p>
-        <p class="cc-exp" style="border-top:1px solid rgba(0,0,0,.08);padding-top:.3rem">EXP 06: Observing Design</p>
+        <div class="cc-roles">
+          <p class="cc-exp">EXP 03: Large Ensemble Testbed</p>
+          <p class="cc-exp">EXP 06: Observing Design</p>
+        </div>
         <p class="cc-name">Thea Hatlen Heimdal</p>
         <p class="cc-affil">Columbia Univ. / LDEO, USA</p>
-        <a class="cc-email" style="font-size:.78rem;padding-left:.6rem;padding-right:.6rem;max-width:100%;overflow-wrap:anywhere" data-email="theimdal" data-domain="ldeo.columbia.edu"></a>
+        <a class="cc-email" data-email="theimdal" data-domain="ldeo.columbia.edu"></a>
       </div>
       <div class="cc">
-        <p class="cc-exp">EXP 04: Climatological Testbed</p>
+        <div class="cc-roles">
+          <p class="cc-exp">EXP 04: Climatological Testbed</p>
+        </div>
         <p class="cc-name">Amanda Fay</p>
         <p class="cc-affil">Columbia Univ. / LDEO, USA</p>
         <a class="cc-email" data-email="afay" data-domain="ldeo.columbia.edu"></a>
       </div>
       <div class="cc">
-        <p class="cc-exp">EXP 07: Argo Sampling</p>
+        <div class="cc-roles">
+          <p class="cc-exp">EXP 07: Argo Sampling</p>
+        </div>
         <p class="cc-affil">Contact to be announced</p>
       </div>
       <div class="cc">
-        <p class="cc-exp">Website Changes</p>
+        <div class="cc-roles">
+          <p class="cc-exp">Website Changes</p>
+        </div>
         <p class="cc-name">Maurie Keppens</p>
         <p class="cc-affil">Flanders Marine Institute (VLIZ), Belgium</p>
         <a class="cc-email" data-email="maurie.keppens" data-domain="vliz.be"></a>
