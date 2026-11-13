@@ -17,7 +17,7 @@ const navLinks = [
   { href: 'resources.html', text: 'Resources' },
   { href: 'publications.html', text: 'Publications' },
   { href: 'partners.html', text: 'Partners' },
-  { href: 'events.html', text: 'Events' },
+  { href: 'events.html', text: 'Media & Events' },
   { href: 'contact.html', text: 'Contact' }
 ];
 
