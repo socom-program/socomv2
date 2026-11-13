@@ -26,7 +26,7 @@
 
     <div class="content-box">
       <h3>Overview</h3>
-      <p>Reconstructions of sfCO₂ rely on ship-based observations from SOCAT, which are sparse in space and time. Autonomous platforms such as BGC-Argo floats sample year-round, including in regions and seasons ships rarely reach, so they could fill some of the ship-based sampling gaps. However, float-based sfCO₂ is not measured directly. It is derived from other float variables, such as pH, or estimated from temperature, salinity and oxygen. These sfCO₂ estimates thus carry larger uncertainties and potential biases relative to SOCAT. Exp. 7 applies a testbed approach to evaluate the impact of float-based observations on sfCO₂ reconstruction skill, and how sensitive the results are to float coverage, uncertainty and bias.</p>
+      <p>sfCO₂ reconstructions rely on ship-based observations from SOCAT, which are sparse in space and time. Autonomous platforms such as BGC-Argo floats sample year-round, including in regions and seasons ships rarely reach, so they could fill some of the ship-based sampling gaps. However, float-based sfCO₂ is not measured directly. It is derived from other float variables, such as pH, or estimated from temperature, salinity and oxygen. These sfCO₂ estimates thus carry larger uncertainties and potential biases relative to SOCAT. EXP 07 applies a testbed approach to evaluate the impact of float-based observations on sfCO₂ reconstruction skill, and how sensitive the results are to float coverage, uncertainty and bias.</p>
 
       <h3>Lead Authors</h3>
       <p>Thea Heimdal and Louise Delaigue</p>
@@ -49,7 +49,7 @@
               <li>NEMO-PISCES (Aumont et al., 2015)</li>
               <li>MRI-ESM2-2 (Nakano et al., 2011; Urakawa et al., 2020; Sakamoto et al., 2023)</li>
             </ul>
-            <p>The testbed is identical to that used in Exp. 6. GOBM output is from GCB 2025 (Friedlingstein et al., 2025). Together, these GOBMs span a range of circulation schemes, biogeochemical complexity and parameterizations, to test whether the skill of the sfCO₂ reconstruction methods is robust across testbed models.</p>
+            <p>The testbed is identical to that used in EXP 06. GOBM output is from GCB 2025 (Friedlingstein et al., 2025). Together, these GOBMs span a range of circulation schemes, biogeochemical complexity and parameterizations, to test whether the skill of the sfCO₂ reconstruction methods is robust across testbed models.</p>
           </td>
         </tr>
         <tr><td class="exp-info-label">sfCO₂ reconstruction methods:</td><td class="exp-info-value">TBD</td></tr>
@@ -58,7 +58,7 @@
         <tr>
           <td class="exp-info-label">Design:</td>
           <td class="exp-info-value">
-            <p>EXP #7 extends the framework in Experiment 6 by adding BGC-Argo float locations to the BASE sampling mask (BASE+ARGO). Each reconstruction method applies both the BASE and BASE+ARGO masks in the testbed, and reconstructs sfCO₂. Reconstructed full field sfCO₂ is compared against the testbed truth.</p>
+            <p>EXP 07 extends the framework in EXP 06 by adding BGC-Argo float locations to the BASE sampling mask (BASE+ARGO). Each reconstruction method applies both the BASE and BASE+ARGO masks in the testbed, and reconstructs sfCO₂. Reconstructed full field sfCO₂ is compared against the testbed truth.</p>
             <p>The Argo sampling mask represents a plausible near-future float array, built by subsampling historic float locations and times over a recent period (currently a 25% subsample of historic floats in 2020–2024).</p>
             <p>Floats are grouped by how many crossovers they have with the SOCAT sampling, since crossovers allow a float’s sfCO₂ to be checked and corrected. Floats with more crossovers are assigned a smaller bias. In the current design, floats with no crossovers receive the maximum bias, floats with one crossover receive half, and floats with two or more receive none. Runs are performed with each crossover group separately and with all groups combined.</p>
             <p>The magnitude of the float bias is treated as a sensitivity parameter. Options range from a value based on published comparisons (about +8 µatm; REF) to a forward-looking value reflecting revised pH adjustment methods (about +2 µatm; REF?). An unbiased case using only well-constrained floats is also tested.</p>
