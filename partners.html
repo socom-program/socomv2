@@ -19,9 +19,15 @@
     margin-top: 1rem;
   }
   .support-logos img {
-    max-height: 60px;
-    width: auto;
+    width: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    position: static !important;
   }
+  /* Eén hoogte per logo: pas deze getallen aan om ze gelijk te trekken */
+  .support-logos .logo-esa   { height: 80px !important; }
+  .support-logos .logo-oc4c  { height: 80px !important; }
+  .support-logos .logo-ioccp { height: 110px !important; }
 </style>
 </head>
 <body>
@@ -161,10 +167,10 @@
     </div>
     <h3 class="sec-h2">Support organizations</h3>
     <div class="support-logos">
-      <img src="images/esa_logo.png" alt="European Space Agency (ESA)" title="European Space Agency (ESA)">
-      <img src="images/oc4c_2_logo.png" alt="OceanCarbon4Climate" title="OceanCarbon4Climate">
+      <img class="logo-esa" src="images/esa_logo.png" alt="European Space Agency (ESA)" title="European Space Agency (ESA)">
+      <img class="logo-oc4c" src="images/oc4c_2_logo.png" alt="OceanCarbon4Climate" title="OceanCarbon4Climate">
       <a href="https://www.ioccp.org/" target="_blank" rel="noopener" title="International Ocean Carbon Coordination Project (IOCCP)">
-        <img src="images/logo_IOCCP.jpg" alt="IOCCP">
+        <img class="logo-ioccp" src="images/logo_IOCCP.jpg" alt="IOCCP">
       </a>
     </div>
   </div>
