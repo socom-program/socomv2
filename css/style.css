@@ -1448,3 +1448,17 @@ footer {
   }
 
 }
+
+#exp01 .content-box {
+  text-align: left;
+}
+
+#exp01 .content-box p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#exp01 .content-box h3 {
+  text-align: left;
+}
