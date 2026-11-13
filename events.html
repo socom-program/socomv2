@@ -1,85 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events - SOCOM v2</title>
-<link rel="icon" type="image/png" href="images/round_socomv2_logo.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-<!-- NAV -->
-<div id="nav-container"></div>
+/* MEDIA SECTION */
 
-<!-- EVENTS -->
-<section id="events">
-  <div class="section reveal">
-    <span class="section-label">Events</span>
-    <h2>Community Meetings</h2>
-    <div class="section-divider"></div>
-    <div class="ev-container">
-      <div class="ev-list">
-        <div class="ev-row"><span class="ev-date">2026-09</span><span class="ev-desc">SOCOMv2 presenting new results at the ICOS Science Conference 2026</span><span class="ev-tag new">SOCOMv2</span></div>
-        <div class="ev-row-with-image">
-          <div class="ev-content">
-            <div class="ev-row">
-              <span class="ev-date">2026-06, Ostend</span>
+#media {
+  padding: 80px 0;
+}
 
-              <div class="ev-main">
-                <span class="ev-desc">Observing System Simulation Experiments Workshop</span>
+.media-container {
+  margin-top: 35px;
+  max-width: 900px;
+}
 
-                <p class="event-description">
-                  SOCOMv2 presented OSSE results on sfCO₂ reconstructions and air–sea CO₂ flux estimates at the Ocean Carbon Observing Design Workshop in Ostend. The experiments evaluated sampling-mask configurations and network performance, supporting discussions on an optimal surface ocean pCO₂ observing design for WMO G3W requirements and informing next steps for SOCOMv2.
-                </p>
-              </div>
+.media-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 28px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  background: transparent;
+}
 
-              <span class="ev-tag new">SOCOMv2</span>
-            </div>
-          </div>
+.media-card:hover {
+  border-color: #6b9b99;
+  transform: translateY(-3px);
+  text-decoration: none;
+  color: inherit;
+}
 
-          <img src="images/picture1.jpg" alt="Observing System Simulation Experiments 2026" class="event-image">
-        </div>
+.media-content {
+  flex: 1;
+}
 
-        <div class="ev-row-with-image">
-          <div class="ev-content">
-            <div class="ev-row">
-              <span class="ev-date">2026-02, Glasgow</span>
+.media-source {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #79918f;
+  margin-bottom: 14px;
+}
 
-              <div class="ev-main">
-                <span class="ev-desc">SOCOMv2 dinner — Ocean Sciences Meeting 2026</span>
+.media-card h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
 
-                <p class="event-description">
-                  SOCOMv2 members met for a dinner during the Ocean Sciences Meeting 2026 in Glasgow.
-                </p>
-              </div>
+.media-card p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 18px;
+}
 
-              <span class="ev-tag new">SOCOMv2</span>
-            </div>
-          </div>
+.media-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #668d8b;
+}
 
-          <img src="images/SOCOM_team_OSM.jpeg" class="event-image">
-        </div>
+.media-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border: 1px solid #79918f;
+  color: #668d8b;
+  white-space: nowrap;
+}
 
+@media (max-width: 600px) {
+  .media-card {
+    padding: 22px;
+    gap: 15px;
+  }
 
-        <div class="ev-row"><span class="ev-date">2023</span><span class="ev-desc">SOCOMv2 launched as a coordinated multi-experiment framework</span><span class="ev-tag new">SOCOMv2</span></div>
-        <div class="ev-row"><span class="ev-date">2015-09, Kiel</span><span class="ev-desc">SOCAT-SOCOM side event, SOLAS Meeting</span><span class="ev-tag old">SOCOM</span></div>
-        <div class="ev-row"><span class="ev-date">2015-02, Tsukuba</span><span class="ev-desc">SOCOM progress workshop</span><span class="ev-tag old">SOCOM</span></div>
-        <div class="ev-row"><span class="ev-date">2014-06, Bergen</span><span class="ev-desc">SOCOM progress discussion, IMBER Meeting</span><span class="ev-tag old">SOCOM</span></div>
-        <div class="ev-row"><span class="ev-date">2013-06, Beijing</span><span class="ev-desc">SOCOM kick-off meeting</span><span class="ev-tag old">SOCOM</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<div id="footer-container"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/common.js"></script>
-</body>
-</html>
+  .media-card h3 {
+    font-size: 16px;
+  }
+}
